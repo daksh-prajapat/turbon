@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', 'Lato', 'Lora', Arial, sans-serif;
 }
 
 .header {
@@ -27,6 +27,7 @@ body {
     height: 24px;
     width: 100%;
     position: relative;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -220,6 +221,7 @@ body {
     font-size: 14px;
     line-height: 100%;
     color: #000000;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header-main-middle ul li i {
@@ -372,6 +374,7 @@ body {
 .hero-section-text-left {
     width: 100%;
     max-width: 593px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-section-text-left h1 {
@@ -388,6 +391,7 @@ body {
     font-size: 12px;
     color: #FFFFFF;
     line-height: 155%;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ====== RIGHT SIDE (Agar kuch ho to) ====== */
@@ -396,6 +400,7 @@ body {
     display: flex;
     align-items: flex-end;
     gap: 10px;
+
 }
 
 .hero-section-text-right button {
@@ -410,6 +415,7 @@ body {
     background: #FFFFFF;
     gap: 10px;
     border-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-section-text-right button i {
@@ -481,6 +487,7 @@ body {
     font-size: 16px;
     line-height: 100%;
     margin-bottom: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-container-left-top h1 {
@@ -489,6 +496,7 @@ body {
     font-size: 40px;
     line-height: 100%;
     color: #000000;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-container-left-top h1 p {
@@ -532,6 +540,7 @@ body {
 }
 
 .about-container-right-text {
+    font-family: 'Lato', sans-serif;
     width: 535px;
     height: 289px;
     font-weight: 400;
@@ -550,6 +559,7 @@ body {
     line-height: 100%;
     color: #B18C5B;
     margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-container-right-bottom {
@@ -584,6 +594,7 @@ body {
     color: #18171C;
     align-items: center;
     text-align: center;
+    font-family: 'Lora', serif;
 
 }
 
@@ -605,6 +616,7 @@ body {
 }
 
 .about-container-right-bottom-b-box {
+    font-family: 'Poppins', sans-serif;
     /* width: 142px; */
     height: 27px;
     margin-right: -27px;
@@ -622,9 +634,8 @@ body {
 .blog-section {
     width: 100%;
     /* height: 90vh; */
-    min-height: 580px;
-    /* Minimum height ensure karega */
-    margin-bottom: 10%;
+    min-height: 715px;
+    margin-bottom: 3%;
     position: relative;
     /* background-color: #000; */
     margin-top: 0;
@@ -655,6 +666,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
+    font-family: 'Poppins', sans-serif;
     /* margin-bottom: 18px; */
 }
 
@@ -668,6 +680,7 @@ body {
     justify-content: center;
     text-align: center;
     color: #000000;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog-container-content {
@@ -678,7 +691,7 @@ body {
 }
 
 .blog-container-content-box {
-    width: 265px;
+    width: 290px;
     height: 305px;
     position: absolute;
     left: 105px;
@@ -707,6 +720,7 @@ body {
     top: 100px;
     left: 75px;
     color: #161616;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog-container-content-box span {
@@ -717,6 +731,7 @@ body {
     top: 150px;
     left: 16px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -727,7 +742,7 @@ body {
 
 
 .blog-container-content-box-2 {
-    width: 265px;
+    width: 290px;
     height: 305px;
     position: absolute;
     left: 418px;
@@ -756,6 +771,7 @@ body {
     top: 100px;
     left: 28px;
     color: #161616;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog-container-content-box-2 span {
@@ -766,6 +782,7 @@ body {
     top: 150px;
     left: 12px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -775,7 +792,7 @@ body {
 
 
 .blog-container-content-box-3 {
-    width: 265px;
+    width: 290px;
     height: 305px;
     position: absolute;
     left: 740px;
@@ -804,6 +821,7 @@ body {
     top: 100px;
     left: 48px;
     color: #161616;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog-container-content-box-3 span {
@@ -814,6 +832,7 @@ body {
     top: 150px;
     left: 16px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -822,7 +841,7 @@ body {
 
 
 .blog-container-content-box-4 {
-    width: 265px;
+    width: 290px;
     height: 305px;
     position: absolute;
     left: 105px;
@@ -851,6 +870,7 @@ body {
     top: 100px;
     left: 62px;
     color: #161616;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog-container-content-box-4 span {
@@ -861,6 +881,7 @@ body {
     top: 150px;
     left: 16px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -868,7 +889,7 @@ body {
 
 
 .blog-container-content-box-5 {
-    width: 265px;
+    width: 290px;
     height: 305px;
     position: absolute;
     left: 418px;
@@ -897,6 +918,7 @@ body {
     top: 100px;
     left: 42px;
     color: #161616;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog-container-content-box-5 span {
@@ -907,13 +929,14 @@ body {
     top: 150px;
     left: 2px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 
 
 .blog-container-content-box-6 {
-    width: 265px;
+    width: 290px;
     height: 305px;
     position: absolute;
     left: 740px;
@@ -942,6 +965,7 @@ body {
     top: 100px;
     left: 48px;
     color: #161616;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog-container-content-box-6 span {
@@ -952,6 +976,7 @@ body {
     top: 150px;
     left: -8px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -982,6 +1007,7 @@ body {
     font-weight: 400;
     color: #C99A56;
     margin-bottom: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .completed-projects h2 {
@@ -991,6 +1017,7 @@ body {
     line-height: 1.3;
     color: #161616;
     margin-bottom: 70px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .project-slider {
@@ -1075,6 +1102,7 @@ body {
     line-height: 1.2;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 .project-left p {
@@ -1082,6 +1110,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -1094,7 +1123,7 @@ body {
 
     width: 185px;
     height: 48px;
-
+    font-family: 'Poppins', sans-serif;
     border-radius: 50px;
     background: #fff;
 
@@ -1143,7 +1172,7 @@ body {
 
     font-size: 16px;
     font-weight: 500;
-
+    font-family: 'Poppins', sans-serif;
     transition: .35s;
 }
 
@@ -1159,9 +1188,37 @@ body {
     transform: translateX(5px);
 }
 
+/* ============================================
+   NEW: SLIDER BOTTOM NAVIGATION BUTTONS
+   Center me, slider ke neeche
+============================================ */
+.slider-bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0 10px 0;
+}
 
+.slider-bottom-nav button {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #161616;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: .35s;
+    font-family: 'Poppins', sans-serif;
+}
 
-
+.slider-bottom-nav button:hover {
+    background: #161616;
+    color: #fff;
+}
 
 
 
@@ -1197,6 +1254,7 @@ body {
 }
 
 .testimonial-heading span {
+    font-family: 'Poppins', sans-serif;
     display: block;
     margin-bottom: 12px;
     color: #C49A5A;
@@ -1205,6 +1263,7 @@ body {
 }
 
 .testimonial-heading h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 600;
@@ -1216,6 +1275,7 @@ body {
 }
 
 .testimonial-description p {
+    font-family: 'Poppins', sans-serif;
     color: #404040;
     font-size: 13px;
     line-height: 26px;
@@ -1300,6 +1360,7 @@ body {
     line-height: 1.6;
     color: #000000;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     max-width: 90%;
 }
 
@@ -1310,6 +1371,7 @@ body {
 }
 
 .testimonial-bottom h3 {
+    font-family: 'Poppins', sans-serif;
     line-height: 1.1;
     font-size: 34px;
     font-weight: 600;
@@ -1326,6 +1388,7 @@ body {
 }
 
 .testimonial-buttons button {
+    font-family: 'Poppins', sans-serif;
     width: 52px;
     height: 52px;
     border: 1px solid #161616;
@@ -1371,7 +1434,7 @@ body {
 }
 
 .ready-container h2 {
-
+    font-family: 'Poppins', sans-serif;
     margin-top: 4px;
     /* left: 398px; */
     /* top: 34.5px; */
@@ -1385,7 +1448,7 @@ body {
 }
 
 .ready-container p {
-
+    font-family: 'Poppins', sans-serif;
     max-width: 620px;
     margin: 0 auto 6px;
     font-size: 12px;
@@ -1395,7 +1458,7 @@ body {
 }
 
 .ready-container a {
-
+    font-family: 'Poppins', sans-serif;
     line-height: 100%;
     width: 201px;
     height: 40px;
@@ -1464,6 +1527,7 @@ body {
     color: #C49A5A;
     margin-bottom: 12px;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 
 .ongoing-heading h2 {
@@ -1471,6 +1535,7 @@ body {
     line-height: 140%;
     font-weight: 600;
     color: #000000;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -1533,6 +1598,7 @@ body {
     color: #161616;
     line-height: 1.3;
     margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .ongoing-content p {
@@ -1541,6 +1607,7 @@ body {
     color: #000000;
     line-height: 28px;
     margin-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .ongoing-content a {
@@ -1558,6 +1625,7 @@ body {
     color: #FFFFFF;
     background: #B18C5B;
     transition: .35s;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -1583,7 +1651,7 @@ body {
     border-radius: 50px;
 
     text-decoration: none;
-
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
 
@@ -1633,6 +1701,7 @@ body {
 }
 
 .dream-heading span {
+    font-family: 'Poppins', sans-serif;
     display: block;
     font-size: 16px;
     color: #C49A5A;
@@ -1641,6 +1710,7 @@ body {
 }
 
 .dream-heading h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     line-height: 140%;
     font-weight: 600;
@@ -1711,6 +1781,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dream-content-box-content-text span {
@@ -1721,6 +1792,7 @@ body {
     letter-spacing: 0%;
     text-transform: uppercase;
     white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dream-content-box-content i {
@@ -1847,6 +1919,7 @@ body {
     line-height: 50px;
     margin: 0;
     transition: all 0.5s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -1896,6 +1969,7 @@ body {
     color: #fff;
     font-size: 40px;
     font-weight: 300;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     margin-top: 25px;
     letter-spacing: 1px;
@@ -1906,6 +1980,7 @@ body {
     line-height: 100%;
     height: 41px;
     width: 187px;
+    font-family: 'Poppins', sans-serif;
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -2007,6 +2082,7 @@ FORM BOX
     color: #161616;
     margin-bottom: 6px;
     line-height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact-box p {
@@ -2015,6 +2091,7 @@ FORM BOX
     font-size: 20px;
     color: #161616;
     margin-bottom: 35px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*==========================
@@ -2109,6 +2186,7 @@ BOTTOM
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -2136,6 +2214,7 @@ BOTTOM
     font-weight: 400;
     line-height: 23px;
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
     color: #000000;
 
 }
@@ -2143,7 +2222,7 @@ BOTTOM
 
 
 .submit-1 {
-
+    font-family: 'Poppins', sans-serif;
     line-height: 100%;
     font-weight: 400;
     width: 201px;
@@ -2216,6 +2295,7 @@ LEFT
     line-height: 28px;
     color: #FFFFFF;
     max-width: 330px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .divider {
@@ -2231,6 +2311,7 @@ LEFT
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .office p {
@@ -2238,6 +2319,7 @@ LEFT
     font-size: 12px;
     line-height: 21px;
     color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact-info {
@@ -2254,6 +2336,7 @@ LEFT
 .info-box i {
     font-size: 18px;
     margin-top: 6px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .info-box h4 {
@@ -2262,11 +2345,13 @@ LEFT
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .info-box span {
     font-size: 14px;
     color: #ededed;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*==========================
@@ -2295,6 +2380,7 @@ RIGHT
     margin-bottom: 20px;
     letter-spacing: 1px;
     line-height: 28px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .link-column ul {
@@ -2321,6 +2407,7 @@ RIGHT
     transition: .3s;
     font-weight: 400;
     line-height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .link-column ul li a:hover {
@@ -2356,6 +2443,7 @@ COPYRIGHT
     color: #FFFFFF;
     line-height: 28px;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -2425,6 +2513,7 @@ COPYRIGHT
     align-items: center;
     justify-content: center;
     transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mobile-nav-close:hover {
@@ -2452,6 +2541,7 @@ COPYRIGHT
     color: #161616;
     text-decoration: none;
     transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mobile-nav-list li a:hover {
@@ -2483,6 +2573,7 @@ COPYRIGHT
     font-size: 15px;
     font-weight: 500;
     transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mobile-nav-enquire:hover {
@@ -2547,7 +2638,7 @@ COPYRIGHT
     }
 
     .about-container {
-        width: 1050px;
+        width: 1100px;
     }
 
     .about-container-left {
@@ -2560,8 +2651,16 @@ COPYRIGHT
     }
 
     .about-container-right {
+        margin-left: 45px;
         left: 510px;
         width: 510px;
+    }
+
+    .about-container-left-top h1 {
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 115%;
     }
 
     .about-container-right-text {
@@ -2571,8 +2670,39 @@ COPYRIGHT
     }
 
     .about-container-right-bottom {
-        width: calc(100% + 24px);
-        right: -3%;
+        height: auto;
+        position: absolute;
+        top: 540px;
+        /* right: -24%; */
+        width: calc(100% + 432px);
+        right: 0%;
+    }
+
+    .about-container-right-bottom-b {
+
+        padding: 18px 20px;
+
+    }
+
+    .about-container-right-bottom-b-box {
+
+        height: 23px;
+        margin-right: -27px;
+
+        font-size: 16px;
+    }
+
+    .about-container-right-bottom-top-box {
+        width: 130px;
+        height: 105px;
+        display: flex;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 110%;
+        color: #18171C;
+        align-items: center;
+        text-align: center;
+        font-family: 'Lora', serif;
     }
 
     .blog-container-top h1 {
@@ -2604,11 +2734,16 @@ COPYRIGHT
     }
 
     .testimonial-top {
-        padding: 70px 5% 60px;
+        padding: 70px 3% 60px;
+        gap: 14px;
     }
 
     .testimonial-heading h2 {
-        font-size: 34px;
+        font-size: 28px;
+    }
+
+    .testimonial-description {
+        width: 51%;
     }
 
     .review {
@@ -2810,7 +2945,7 @@ COPYRIGHT
     .hero-section {
         height: 65vh;
         min-height: 380px;
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
     }
 
     .hero-section-text {
@@ -2880,20 +3015,23 @@ COPYRIGHT
         line-height: 1.3;
     }
 
-   .about-container-left-top-img {
-    height: 649px;
-    margin-top: 20px;
-    width: 100%;
-    overflow: hidden;
-}
+    .about-container-left-top-img {
+        margin-left: 90px;
+        height: 640px;
+        margin-top: 30px;
+        width: 75%;
+        overflow: hidden;
+    }
 
-.about-container-left-top-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Crop karega lekin center se */
-    object-position: center center;  /* Center se crop */
-    display: block;
-}
+    .about-container-left-top-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Crop karega lekin center se */
+        object-position: center center;
+        /* Center se crop */
+        display: block;
+    }
 
     .about-container-right {
         position: static;
@@ -2905,16 +3043,19 @@ COPYRIGHT
     }
 
     .about-container-right-img {
+        position: absolute;
         width: 52px;
         height: 50px;
+        left: 50%;
     }
 
     .about-container-right-text {
+        padding: 45px;
         width: 100%;
         height: auto;
         font-size: 13px;
         line-height: 24px;
-        margin-top: 25px;
+        margin-top: 50px;
     }
 
     .about-container-right-connect {
@@ -3307,8 +3448,9 @@ COPYRIGHT
     }
 
     .dream-content {
+        margin-left: 40px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
         height: auto;
         gap: 10px;
         margin-bottom: 10px;
@@ -3316,7 +3458,7 @@ COPYRIGHT
     }
 
     .dream-content-box {
-        width: 100%;
+        width: 78%;
         height: 76px;
         gap: 5px;
     }
@@ -3338,7 +3480,7 @@ COPYRIGHT
 
     .dream-content-box-content-text p,
     .dream-content-box-content-text span {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 16px;
     }
 
@@ -3376,8 +3518,9 @@ COPYRIGHT
     }
 
     .left-image {
-        width: 100%;
-        height: 320px;
+        margin-left: 22px;
+        width: 95%;
+        height: 658px;
         min-height: auto;
     }
 
@@ -3629,12 +3772,18 @@ COPYRIGHT
 
     .about-container-left-top span {
         font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .about-container-left-top h1 {
+        display: flex;
         font-size: 20px;
         margin-top: 6px;
         line-height: 1.3;
+        align-items: center;
+        justify-content: center;
     }
 
     .about-container-left-top h1 p {
@@ -3642,9 +3791,10 @@ COPYRIGHT
     }
 
     .about-container-left-top-img {
-        height: 220px;
+        height: 600px;
         margin-top: 14px;
-        width: 100%;
+        width: 94%;
+        margin-left: 10px;
     }
 
     .about-container-right {
@@ -3659,14 +3809,16 @@ COPYRIGHT
     .about-container-right-img {
         width: 44px;
         height: 42px;
+        margin-left: 40%;
     }
 
     .about-container-right-text {
+        padding: 30px;
         width: 100%;
         height: auto;
         font-size: 12px;
         line-height: 20px;
-        margin-top: 18px;
+        margin-top: 30px;
     }
 
     .about-container-right-connect {
@@ -3674,6 +3826,7 @@ COPYRIGHT
         margin-top: 14px;
         width: auto;
         height: auto;
+        margin-left: 30px;
     }
 
     .about-container-right-bottom {
@@ -4092,10 +4245,10 @@ COPYRIGHT
 
     .dream-content {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         height: auto;
         gap: 10px;
-        margin-bottom: 0;
+        margin-bottom: 18px;
         justify-content: unset;
         transition: transform 0.4s ease;
     }
@@ -4124,7 +4277,7 @@ COPYRIGHT
 
     .dream-content-box-content-text p,
     .dream-content-box-content-text span {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 15px;
     }
 
@@ -4193,8 +4346,9 @@ COPYRIGHT
     }
 
     .left-image {
-        width: 100%;
-        height: 240px;
+        margin-left: 12px;
+        width: 95%;
+        height: 440px;
         min-height: auto;
     }
 
@@ -4411,85 +4565,57 @@ COPYRIGHT
 }
 
 
-/* ================================================
-   DREAM SECTION: 770px - 1020px → 3 per row
-================================================ */
-@media (min-width: 770px) and (max-width: 1020px) {
-    .dream-content {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important;
-        height: auto !important;
-        gap: 12px !important;
-        margin-bottom: 12px !important;
-        flex-wrap: unset !important;
-        transform: none !important;
-        transition: none !important;
-    }
-
-    .dream-content-box {
-        width: 100% !important;
-        height: 80px !important;
-        flex: unset !important;
-    }
-
-    .dream-content-box-img {
-        width: 80px !important;
-        height: 80px !important;
-    }
-
-    .dream-content-box-content-text p,
-    .dream-content-box-content-text span {
-        font-size: 10px !important;
-        line-height: 16px !important;
-        white-space: normal !important;
-    }
-
-    .dream-nav {
-        display: none !important;
-    }
-}
 
 
 /*==============================
         NEWS TICKER
 ==============================*/
 
-.news-ticker{
-    width:100%;
-    max-width:1920px;
-    height:31px;
-    margin:auto;
-    overflow:hidden;
-    background:#F8F8F8;
+.news-ticker {
+    width: 100%;
+    max-width: 1920px;
+    height: 31px;
+    margin: auto;
+    overflow: hidden;
+    background: #F8F8F8;
 }
 
-.ticker-wrapper{
-    width:100%;
-    height:31px;
-    overflow:hidden;
-    position:relative;
+.ticker-wrapper {
+    width: 100%;
+    height: 31px;
+    overflow: hidden;
+    position: relative;
 
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 }
 
-.ticker-track{
-    display:flex;
-    align-items:center;
-    gap:25px;
-    white-space:nowrap;
-    will-change:transform;
+.ticker-track {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    white-space: nowrap;
+    will-change: transform;
 }
 
-.ticker-track span{
-    flex-shrink:0;
-    font-size:12px;
-    font-weight:400;
-    color:#9A9A9A;
-    line-height:31px;
+.ticker-track span {
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9A9A9A;
+    line-height: 31px;
 }
 
-.divider{
-    color:#9A9A9A;
-    font-size:12px;
+.divider {
+    color: #9A9A9A;
+    font-size: 12px;
+}
+
+@media (max-width: 580px) {
+    .left-image {
+        margin-left: 12px;
+        width: 95%;
+        height: 405px;
+        min-height: auto;
+    }
 }

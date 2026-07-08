@@ -7,6 +7,9 @@
     <title>Turban</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -164,19 +167,19 @@
                     युगकुल नेता सत्ता चली आई । प्राण जाए पर वचन न जाई ॥
                 </span>
 
-        
+
 
                 <span>
                     परहित बस जिन के मन माहीं तिन्ह कहुँ जग दुर्लभ कछु नाहीं ॥
                 </span>
 
-              
+
 
                 <span>
                     भारतः जिन लोगों के मन में दूसरों का हित होता है, उनके लिए दुनिया में कुछ भी मुश्किल नहीं।
                 </span>
 
-               
+
 
                 <!-- Duplicate for Infinite Loop -->
 
@@ -184,19 +187,19 @@
                     युगकुल नेता सत्ता चली आई । प्राण जाए पर वचन न जाई ॥
                 </span>
 
-            
+
 
                 <span>
                     परहित बस जिन के मन माहीं तिन्ह कहुँ जग दुर्लभ कछु नाहीं ॥
                 </span>
 
-              
+
 
                 <span>
                     भारतः जिन लोगों के मन में दूसरों का हित होता है, उनके लिए दुनिया में कुछ भी मुश्किल नहीं।
                 </span>
 
-           
+
 
             </div>
 
@@ -503,6 +506,12 @@
 
             </div>
 
+            <!-- ====== NEW: Bottom Navigation Buttons ====== -->
+            <div class="slider-bottom-nav">
+                <button class="project-prev">&#8592;</button>
+                <button class="project-next">&#8594;</button>
+            </div>
+
             <div class="view-all">
                 <a href="#">
                     View All <span>→</span>
@@ -516,10 +525,6 @@
 
 
 
-
-    <!-- ===========================
-    Testimonials Section
-=========================== -->
 
     <!-- ===========================
     Testimonials Section
@@ -661,6 +666,7 @@
 
 
             </div>
+
         </div>
     </section>
 
@@ -854,6 +860,12 @@
 
             </div>
 
+            <!-- ====== NEW: Bottom Navigation Buttons ====== -->
+            <div class="slider-bottom-nav">
+                <button class="ongoing-prev">&#8592;</button>
+                <button class="ongoing-next">&#8594;</button>
+            </div>
+
         </div>
 
     </section>
@@ -862,7 +874,7 @@
     <section class="dream-section">
         <div class="dream-container">
             <div class="dream-heading">
-                <span>Your Dream Space Awaits </span>
+                <span>Your Dream Space Awaits </span>
                 <h2>From premium apartments to luxury residences</h2>
             </div>
             <div class="dream-content">
@@ -1269,6 +1281,12 @@
 
             </div>
 
+            <!-- ====== NEW: Bottom Navigation Buttons ====== -->
+            <div class="slider-bottom-nav">
+                <button class="feature-prev">&#8592;</button>
+                <button class="feature-next">&#8594;</button>
+            </div>
+
         </div>
 
     </section>
@@ -1601,6 +1619,9 @@
 
         });
 
+        // ============================================================
+        // COMPLETED PROJECTS SLIDER
+        // ============================================================
         document.addEventListener("DOMContentLoaded", () => {
 
             const track = document.querySelector(".project-track");
@@ -1659,7 +1680,38 @@
 
             }
 
+            function prevSlide() {
+
+                index--;
+
+                updateSlider(true);
+
+            }
+
+            // ===== BOTTOM BUTTONS =====
+            const bottomNext = document.querySelector(".project-next");
+            const bottomPrev = document.querySelector(".project-prev");
+
+            if (bottomNext) {
+                bottomNext.addEventListener("click", () => {
+                    nextSlide();
+                    resetAuto();
+                });
+            }
+
+            if (bottomPrev) {
+                bottomPrev.addEventListener("click", () => {
+                    prevSlide();
+                    resetAuto();
+                });
+            }
+
             let auto = setInterval(nextSlide, 3000);
+
+            function resetAuto() {
+                clearInterval(auto);
+                auto = setInterval(nextSlide, 3000);
+            }
 
             track.addEventListener("mouseenter", () => {
 
@@ -1702,8 +1754,9 @@
         });
 
 
-
-
+        // ============================================================
+        // TESTIMONIALS SLIDER (No changes - existing buttons only)
+        // ============================================================
         document.addEventListener("DOMContentLoaded", () => {
 
             const track = document.querySelector(".testimonial-track");
@@ -1796,6 +1849,9 @@
         });
 
 
+        // ============================================================
+        // ONGOING PROJECTS SLIDER
+        // ============================================================
         document.addEventListener("DOMContentLoaded", () => {
 
             const track = document.querySelector(".ongoing-track");
@@ -1809,7 +1865,7 @@
                 track.appendChild(card.cloneNode(true));
             });
 
-            const gap = 30; // CSS gap
+            const gap = 30;
             const cardWidth = cards[0].offsetWidth + gap;
 
             let index = 0;
@@ -1859,7 +1915,62 @@
 
             }
 
+            function slidePrev() {
+
+                if (isAnimating) return;
+
+                isAnimating = true;
+
+                index--;
+
+                if (index < 0) {
+                    index = cards.length - 1;
+                    track.style.transition = "none";
+                    track.style.transform = `translateX(-${index * cardWidth}px)`;
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            track.style.transition = "transform .8s ease";
+                            index = cards.length - 2;
+                            slidePrev();
+                        });
+                    });
+                    return;
+                }
+
+                track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+                setTimeout(() => {
+
+                    isAnimating = false;
+
+                }, 800);
+
+            }
+
+            // ===== BOTTOM BUTTONS =====
+            const bottomNext = document.querySelector(".ongoing-next");
+            const bottomPrev = document.querySelector(".ongoing-prev");
+
+            if (bottomNext) {
+                bottomNext.addEventListener("click", () => {
+                    slideNext();
+                    resetAutoOngoing();
+                });
+            }
+
+            if (bottomPrev) {
+                bottomPrev.addEventListener("click", () => {
+                    slidePrev();
+                    resetAutoOngoing();
+                });
+            }
+
             let auto = setInterval(slideNext, 4000);
+
+            function resetAutoOngoing() {
+                clearInterval(auto);
+                auto = setInterval(slideNext, 4000);
+            }
 
             const slider = document.querySelector(".ongoing-slider");
 
@@ -1894,7 +2005,9 @@
         });
 
 
-
+        // ============================================================
+        // FEATURE PROJECTS SLIDER
+        // ============================================================
         document.addEventListener("DOMContentLoaded", () => {
 
             const track = document.querySelector(".feature-track");
@@ -1960,10 +2073,64 @@
 
             }
 
-            // Auto Slide
+            function slidePrev() {
+
+                if (isAnimating) return;
+
+                isAnimating = true;
+
+                currentIndex--;
+
+                if (currentIndex < 0) {
+                    currentIndex = cards.length - 1;
+                    track.style.transition = "none";
+                    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            track.style.transition = "transform .8s ease";
+                            currentIndex = cards.length - 2;
+                            slidePrev();
+                        });
+                    });
+                    return;
+                }
+
+                track.style.transform =
+                    `translateX(-${currentIndex * cardWidth}px)`;
+
+                setTimeout(() => {
+
+                    isAnimating = false;
+
+                }, 800);
+
+            }
+
+            // ===== BOTTOM BUTTONS =====
+            const bottomNext = document.querySelector(".feature-next");
+            const bottomPrev = document.querySelector(".feature-prev");
+
+            if (bottomNext) {
+                bottomNext.addEventListener("click", () => {
+                    slideNext();
+                    resetAutoFeature();
+                });
+            }
+
+            if (bottomPrev) {
+                bottomPrev.addEventListener("click", () => {
+                    slidePrev();
+                    resetAutoFeature();
+                });
+            }
+
             let autoSlide = setInterval(slideNext, 4000);
 
-            // Pause on Hover
+            function resetAutoFeature() {
+                clearInterval(autoSlide);
+                autoSlide = setInterval(slideNext, 4000);
+            }
+
             const slider = document.querySelector(".feature-slider");
 
             slider.addEventListener("mouseenter", () => {
@@ -1978,7 +2145,6 @@
 
             });
 
-            // Responsive
             window.addEventListener("resize", () => {
 
                 cardWidth = cards[0].offsetWidth + gap;
@@ -2001,32 +2167,32 @@
 
         document.addEventListener("DOMContentLoaded", () => {
 
-    const track = document.querySelector(".ticker-track");
+            const track = document.querySelector(".ticker-track");
 
-    if (!track) return;
+            if (!track) return;
 
-    track.innerHTML += track.innerHTML;
+            track.innerHTML += track.innerHTML;
 
-    let position = 0;
-    const speed = 0.4;
+            let position = 0;
+            const speed = 0.4;
 
-    function ticker(){
+            function ticker() {
 
-        position += speed;
+                position += speed;
 
-        if(position >= track.scrollWidth / 2){
-            position = 0;
-        }
+                if (position >= track.scrollWidth / 2) {
+                    position = 0;
+                }
 
-        track.style.transform = `translateX(-${position}px)`;
+                track.style.transform = `translateX(-${position}px)`;
 
-        requestAnimationFrame(ticker);
+                requestAnimationFrame(ticker);
 
-    }
+            }
 
-    ticker();
+            ticker();
 
-});
+        });
     </script>
 </body>
 
