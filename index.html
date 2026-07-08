@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -58,45 +58,54 @@
                 <div class="header-main-logo">
                     <img src="./logo.png" alt="">
                 </div>
-                <div class="header-main-middle">
+                <div class="header-main-middle" id="navMenu">
                     <ul>
                         <li>
-                            <p>About</p>
-                            <i class="fa-solid fa-angle-down"></i>
+                            <p>About</p><i class="fa-solid fa-angle-down"></i>
                         </li>
-
                         <li>
-                            <p>Real Estate</p>
-                            <i class="fa-solid fa-angle-down"></i>
+                            <p>Real Estate</p><i class="fa-solid fa-angle-down"></i>
                         </li>
-
-
                         <li>
-                            <p>Hospitality</p>
-                            <i class="fa-solid fa-angle-down"></i>
+                            <p>Hospitality</p><i class="fa-solid fa-angle-down"></i>
                         </li>
-
-
                         <li>
-                            <p>Media</p>
-                            <i class="fa-solid fa-angle-down"></i>
+                            <p>Media</p><i class="fa-solid fa-angle-down"></i>
                         </li>
-
                         <li>
-                            <p>Career</p>
-                            <i class="fa-solid fa-angle-down"></i>
+                            <p>Career</p><i class="fa-solid fa-angle-down"></i>
                         </li>
-
                         <li>
-                            <p>Contact Us</p>
-                            <i class="fa-solid fa-angle-down"></i>
+                            <p>Contact Us</p><i class="fa-solid fa-angle-down"></i>
                         </li>
                     </ul>
                 </div>
 
+                <!-- Mobile/Tablet Slide-in Menu -->
+                <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+                <nav class="mobile-nav" id="mobileNav">
+                    <div class="mobile-nav-header">
+                        <img src="./logo.png" alt="Logo" class="mobile-nav-logo">
+                        <button class="mobile-nav-close" id="mobileNavClose">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <ul class="mobile-nav-list">
+                        <li><a href="#">About <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">Real Estate <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">Hospitality <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">Media <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">Career <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">Contact Us <i class="fa-solid fa-angle-right"></i></a></li>
+                    </ul>
+                    <div class="mobile-nav-footer">
+                        <a href="#" class="mobile-nav-enquire">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </nav>
+
                 <div class="header-main-right">
-                    <button>Enquire Now</button>
-                    <div class="header-main-right-menu">
+                    <button class="enquire-btn-desktop">Enquire Now</button>
+                    <div class="header-main-right-menu hamburger-btn" id="hamburgerBtn">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
@@ -105,11 +114,20 @@
     </header>
 
     <section class="hero-section">
-        <div class="hero-bg">
-            <img src="./hero-img.png" alt="">
+        <!-- Hero Image Slides -->
+        <div class="hero-slides">
+            <div class="hero-slide active">
+                <img src="./hero-img.png" alt="Hero Image 1">
+            </div>
+            <div class="hero-slide">
+                <img src="./bg-2.png" alt="Hero Image 2">
+            </div>
+            <div class="hero-slide">
+                <img src="./bg-3.png" alt="Hero Image 3">
+            </div>
         </div>
-        <div class="hero-section-text-overlay">
 
+        <div class="hero-section-text-overlay">
             <div class="hero-section-text">
                 <div class="hero-section-text-left">
                     <h1>Find Your Perfect Home</h1>
@@ -129,9 +147,60 @@
                     </button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!--==========================
+        NEWS TICKER
+===========================-->
+
+    <section class="news-ticker">
+
+        <div class="ticker-wrapper">
+
+            <div class="ticker-track">
+
+                <span>
+                    युगकुल नेता सत्ता चली आई । प्राण जाए पर वचन न जाई ॥
+                </span>
+
+        
+
+                <span>
+                    परहित बस जिन के मन माहीं तिन्ह कहुँ जग दुर्लभ कछु नाहीं ॥
+                </span>
+
+              
+
+                <span>
+                    भारतः जिन लोगों के मन में दूसरों का हित होता है, उनके लिए दुनिया में कुछ भी मुश्किल नहीं।
+                </span>
+
+               
+
+                <!-- Duplicate for Infinite Loop -->
+
+                <span>
+                    युगकुल नेता सत्ता चली आई । प्राण जाए पर वचन न जाई ॥
+                </span>
+
+            
+
+                <span>
+                    परहित बस जिन के मन माहीं तिन्ह कहुँ जग दुर्लभ कछु नाहीं ॥
+                </span>
+
+              
+
+                <span>
+                    भारतः जिन लोगों के मन में दूसरों का हित होता है, उनके लिए दुनिया में कुछ भी मुश्किल नहीं।
+                </span>
+
+           
+
+            </div>
 
         </div>
-
 
     </section>
 
@@ -175,22 +244,22 @@
                 <div class="about-container-right-bottom">
                     <div class="about-container-right-bottom-top">
                         <div class="about-container-right-bottom-top-box">
-                            <p>500</p>
+                            <p class="counter" data-target="500">0</p>
                             <span>+</span>
                         </div>
 
                         <div class="about-container-right-bottom-top-box">
-                            <p>2000</p>
+                            <p class="counter" data-target="2000">0</p>
                             <span>+</span>
                         </div>
 
                         <div class="about-container-right-bottom-top-box">
-                            <p>5</p>
+                            <p class="counter" data-target="5">0</p>
                             <span>+</span>
                         </div>
 
                         <div class="about-container-right-bottom-top-box">
-                            <p>2272</p>
+                            <p class="counter" data-target="2272">0</p>
                             <span>+</span>
                         </div>
                     </div>
@@ -226,7 +295,7 @@
 
         <div class="blog-container">
             <div class="blog-container-top">
-                <span>About Turban</span>
+                <span>Our Beliefs</span>
                 <h1>Where Every Project Tells a Story of <br> Excellence and Unwavering Trust</h1>
             </div>
 
@@ -1424,9 +1493,11 @@
                 </div>
 
                 <div class="map-box">
-
-                    <img src="./map.png" alt="Map">
-
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6!2d75.7873!3d26.9124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d04bf2ab53%3A0x8f7a3f1c8c5e8d8e!2sNirman%20Nagar%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1688800000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0; display:block;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Turban Builders Corporate Office Location">
+                    </iframe>
                 </div>
 
             </div>
@@ -1449,6 +1520,87 @@
 
 
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            // ========== HAMBURGER MENU ==========
+            const hamburgerBtn = document.getElementById("hamburgerBtn");
+            const mobileNav = document.getElementById("mobileNav");
+            const mobileNavOverlay = document.getElementById("mobileNavOverlay");
+            const mobileNavClose = document.getElementById("mobileNavClose");
+
+            function openMobileNav() {
+                mobileNav.classList.add("open");
+                mobileNavOverlay.classList.add("show");
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeMobileNav() {
+                mobileNav.classList.remove("open");
+                mobileNavOverlay.classList.remove("show");
+                document.body.style.overflow = "";
+            }
+
+            if (hamburgerBtn) {
+                hamburgerBtn.addEventListener("click", openMobileNav);
+            }
+            if (mobileNavClose) {
+                mobileNavClose.addEventListener("click", closeMobileNav);
+            }
+            if (mobileNavOverlay) {
+                mobileNavOverlay.addEventListener("click", closeMobileNav);
+            }
+
+            // ========== HERO IMAGE SLIDER ==========
+            const heroSlides = document.querySelectorAll(".hero-slide");
+            let heroIndex = 0;
+
+            function nextHeroSlide() {
+                const current = heroIndex;
+                heroIndex = (heroIndex + 1) % heroSlides.length;
+
+                heroSlides[current].classList.remove("active");
+                heroSlides[current].classList.add("exit");
+
+                setTimeout(() => {
+                    heroSlides[current].classList.remove("exit");
+                }, 1200);
+
+                heroSlides[heroIndex].classList.add("active");
+            }
+
+            setInterval(nextHeroSlide, 3000);
+
+            // ========== NUMBER COUNTER ==========
+            const counters = document.querySelectorAll(".counter");
+
+            const observerOptions = {
+                threshold: 0.5
+            };
+
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.dataset.counted) {
+                        entry.target.dataset.counted = true;
+                        const target = parseInt(entry.target.dataset.target);
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        const timer = setInterval(() => {
+                            current += step;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+                            entry.target.textContent = Math.floor(current);
+                        }, 16);
+                    }
+                });
+            }, observerOptions);
+
+            counters.forEach(counter => counterObserver.observe(counter));
+
+        });
+
         document.addEventListener("DOMContentLoaded", () => {
 
             const track = document.querySelector(".project-track");
@@ -1846,6 +1998,35 @@
             });
 
         });
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+    const track = document.querySelector(".ticker-track");
+
+    if (!track) return;
+
+    track.innerHTML += track.innerHTML;
+
+    let position = 0;
+    const speed = 0.4;
+
+    function ticker(){
+
+        position += speed;
+
+        if(position >= track.scrollWidth / 2){
+            position = 0;
+        }
+
+        track.style.transform = `translateX(-${position}px)`;
+
+        requestAnimationFrame(ticker);
+
+    }
+
+    ticker();
+
+});
     </script>
 </body>
 
