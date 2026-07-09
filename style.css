@@ -2251,6 +2251,7 @@ body {
 }
 
 @media (min-width: 1024px) and (max-width: 1399px) {
+
     .header-top-right,
     .header-main-right {
         right: 50px;
@@ -2647,6 +2648,7 @@ body {
 }
 
 @media (min-width: 1400px) and (max-width: 1636px) {
+
     .header-top-right,
     .header-main-right {
         right: 80px;
@@ -2696,6 +2698,7 @@ body {
 }
 
 @media (min-width: 1637px) {
+
     .header-top-right,
     .header-main-right {
         right: 120px;
@@ -3510,8 +3513,8 @@ body {
 
     .header-main-logo {
         position: static;
-        width: 50px;
-        height: 40px;
+        width: 56px;
+        height: 44px;
     }
 
     .header-main-middle {
@@ -4459,6 +4462,7 @@ body {
 }
 
 @media (max-width: 385px) {
+
     .hero-section-text-right button,
     .hero-section-text-right .btn-1 {
         padding: 6px 3px;
@@ -4671,6 +4675,12 @@ body {
 @media (max-width:576px) {
     .counter-box-1 h2 {
         font-size: 30px;
+        margin-left: 18px;
+    }
+
+    .small-line-1 {
+
+        margin-left: 16px;
     }
 
     .counter-box-1 p {
@@ -4679,6 +4689,11 @@ body {
 
     .counter-box-2 h2 {
         font-size: 30px;
+        margin-left: 7px;
+    }
+
+    .small-line-2 {
+        margin-left: 17px;
     }
 
     .counter-box-2 p {
@@ -4687,6 +4702,11 @@ body {
 
     .counter-box-3 h2 {
         font-size: 30px;
+        margin-left: 65px;
+    }
+
+    .small-line-3 {
+        margin-left: 45px;
     }
 
     .counter-box-3 p {
@@ -4695,10 +4715,16 @@ body {
 
     .counter-box-4 h2 {
         font-size: 30px;
+        margin-left: 48px;
+    }
+
+    .small-line-4 {
+        margin-left: 46px;
     }
 
     .counter-box-4 p {
         font-size: 12px;
+        margin-right: 1px;
     }
 }
 
