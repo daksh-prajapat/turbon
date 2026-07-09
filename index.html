@@ -13,9 +13,10 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-section">
-            <div class="header-top">
+            <!-- HEADER-TOP - yeh scroll par gayab ho jayega -->
+            <div class="header-top" id="headerTop">
                 <div class="header-top-left">
                     <div class="header-top-left-1">
                         <div class="header-top-left-1-img">
@@ -35,7 +36,6 @@
                         </div>
                     </div>
 
-
                     <div class="header-top-left-3">
                         <div class="header-top-left-3-img">
                             <img src="./call.png" alt="">
@@ -46,8 +46,6 @@
                     </div>
                 </div>
 
-
-
                 <div class="header-top-right">
                     <p>Follow us</p>
                     <img src="./fb.png" alt="">
@@ -56,31 +54,19 @@
                 </div>
             </div>
 
-
-            <div class="header-main">
+            <!-- HEADER-MAIN - yeh fixed rahega -->
+            <div class="header-main" id="headerMain">
                 <div class="header-main-logo">
                     <img src="./logo.png" alt="">
                 </div>
                 <div class="header-main-middle" id="navMenu">
                     <ul>
-                        <li>
-                            <p>About</p><i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            <p>Real Estate</p><i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            <p>Hospitality</p><i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            <p>Media</p><i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            <p>Career</p><i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            <p>Contact Us</p><i class="fa-solid fa-angle-down"></i>
-                        </li>
+                        <li><p>About</p><i class="fa-solid fa-angle-down"></i></li>
+                        <li><p>Real Estate</p><i class="fa-solid fa-angle-down"></i></li>
+                        <li><p>Hospitality</p><i class="fa-solid fa-angle-down"></i></li>
+                        <li><p>Media</p><i class="fa-solid fa-angle-down"></i></li>
+                        <li><p>Career</p><i class="fa-solid fa-angle-down"></i></li>
+                        <li><p>Contact Us</p><i class="fa-solid fa-angle-down"></i></li>
                     </ul>
                 </div>
 
@@ -116,8 +102,8 @@
         </div>
     </header>
 
+    <!-- REST OF YOUR HTML - same as before -->
     <section class="hero-section">
-        <!-- Hero Image Slides -->
         <div class="hero-slides">
             <div class="hero-slide active">
                 <img src="./hero-img.png" alt="Hero Image 1">
@@ -153,67 +139,25 @@
         </div>
     </section>
 
-    <!--==========================
-        NEWS TICKER
-===========================-->
-
     <section class="news-ticker">
-
         <div class="ticker-wrapper">
-
             <div class="ticker-track">
-
-                <span>
-                    युगकुल नेता सत्ता चली आई । प्राण जाए पर वचन न जाई ॥
-                </span>
-
-
-
-                <span>
-                    परहित बस जिन के मन माहीं तिन्ह कहुँ जग दुर्लभ कछु नाहीं ॥
-                </span>
-
-
-
-                <span>
-                    भारतः जिन लोगों के मन में दूसरों का हित होता है, उनके लिए दुनिया में कुछ भी मुश्किल नहीं।
-                </span>
-
-
-
-                <!-- Duplicate for Infinite Loop -->
-
-                <span>
-                    युगकुल नेता सत्ता चली आई । प्राण जाए पर वचन न जाई ॥
-                </span>
-
-
-
-                <span>
-                    परहित बस जिन के मन माहीं तिन्ह कहुँ जग दुर्लभ कछु नाहीं ॥
-                </span>
-
-
-
-                <span>
-                    भारतः जिन लोगों के मन में दूसरों का हित होता है, उनके लिए दुनिया में कुछ भी मुश्किल नहीं।
-                </span>
-
-
-
+                <span>युगकुल नेता सत्ता चली आई । प्राण जाए पर वचन न जाई ॥</span>
+                <span>परहित बस जिन के मन माहीं तिन्ह कहुँ जग दुर्लभ कछु नाहीं ॥</span>
+                <span>भारतः जिन लोगों के मन में दूसरों का हित होता है, उनके लिए दुनिया में कुछ भी मुश्किल नहीं।</span>
+                <span>युगकुल नेता सत्ता चली आई । प्राण जाए पर वचन न जाई ॥</span>
+                <span>परहित बस जिन के मन माहीं तिन्ह कहुँ जग दुर्लभ कछु नाहीं ॥</span>
+                <span>भारतः जिन लोगों के मन में दूसरों का हित होता है, उनके लिए दुनिया में कुछ भी मुश्किल नहीं।</span>
             </div>
-
         </div>
-
     </section>
-
 
     <section class="about-section">
         <div class="about-container">
             <div class="about-container-left">
                 <div class="about-container-left-top">
                     <span>About Turban</span>
-                    <h1>Committed to Finding <p>Your Perfect Home</p>
+                    <h1>Committed to Finding Your Perfect Home
                     </h1>
                     <div class="about-container-left-top-img">
                         <img src="./about img.png" alt="">
@@ -243,7 +187,6 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
 
-
                 <div class="about-container-right-bottom">
                     <div class="about-container-right-bottom-top">
                         <div class="about-container-right-bottom-top-box">
@@ -271,63 +214,49 @@
                     <div class="about-container-right-bottom-b">
                         <div class="about-container-right-bottom-b-box">
                             <p>Team Members</p>
-
                         </div>
 
                         <div class="about-container-right-bottom-b-box">
                             <p>Happy Customer</p>
-
                         </div>
 
                         <div class="about-container-right-bottom-b-box">
                             <p>Upcoming Projects</p>
-
                         </div>
 
                         <div class="about-container-right-bottom-b-box">
                             <p>Unit Offered in last 36 Months</p>
-
                         </div>
                     </div>
                 </div>
 
                 <section class="mobile-counter-section">
                     <div class="mobile-counter-wrapper">
-
                         <div class="counter-column">
-
-                            <div class="counter-box">
+                            <div class="counter-box-1">
                                 <h2 class="counter" data-target="500">0</h2>
                                 <p>Team Members</p>
                             </div>
-
-                            <div class="small-line"></div>
-
-                            <div class="counter-box">
+                            <div class="small-line-1"></div>
+                            <div class="counter-box-2">
                                 <h2 class="counter" data-target="2000">0</h2>
                                 <p>Happy Customer</p>
                             </div>
-                            <div class="small-line"></div>
-
+                            <div class="small-line-2"></div>
                         </div>
 
                         <div class="counter-column">
-
-                            <div class="counter-box">
+                            <div class="counter-box-3">
                                 <h2 class="counter" data-target="5">0</h2>
                                 <p>Upcoming Projects</p>
                             </div>
-
-                            <div class="small-line"></div>
-
-                            <div class="counter-box">
+                            <div class="small-line-3"></div>
+                            <div class="counter-box-4">
                                 <h2 class="counter" data-target="2272">0</h2>
                                 <p>Unit Offered in last 36 Months</p>
                             </div>
-                            <div class="small-line"></div>
-
+                            <div class="small-line-4"></div>
                         </div>
-
                     </div>
                 </section>
             </div>
@@ -335,7 +264,6 @@
     </section>
 
     <section class="blog-section">
-
         <div class="blog-container">
             <div class="blog-container-top">
                 <span>Our Beliefs</span>
@@ -346,7 +274,6 @@
                 <div class="blog-container-content-box">
                     <div class="blog-container-content-box-img">
                         <img src="./blog-1.png" alt="">
-
                     </div>
                     <p>People First</p>
                     <span>Our customers are at the heart of our <br> journey. We listen, understand, and <br> deliver
@@ -357,7 +284,6 @@
                 <div class="blog-container-content-box-2">
                     <div class="blog-container-content-box-2-img">
                         <img src="./blog-2.png" alt="">
-
                     </div>
                     <p>Uncompromising Quality</p>
                     <span>We focus on the finest craftsmanship,<br> ensuring each project is built to last and <br>
@@ -368,20 +294,15 @@
                 <div class="blog-container-content-box-3">
                     <div class="blog-container-content-box-3-img">
                         <img src="./blog-3.png" alt="">
-
                     </div>
                     <p>Trust and Integrity</p>
                     <span>Transparency and honesty are at the <br> core of our business, fostering long <br> -term
                         relationships built on trust.</span>
                 </div>
 
-
-
-
                 <div class="blog-container-content-box-4">
                     <div class="blog-container-content-box-4-img">
                         <img src="./blog-4.png" alt="">
-
                     </div>
                     <p>Pioneering Spirit</p>
                     <span>We embrace innovation and seek <br> creative solutions, ensuring we remain <br>
@@ -389,11 +310,9 @@
                         adaptable to <br> change.</span>
                 </div>
 
-
                 <div class="blog-container-content-box-5">
                     <div class="blog-container-content-box-5-img">
                         <img src="./blog-5.png" alt="">
-
                     </div>
                     <p>Building Communities</p>
                     <span>We are committed to creating spaces <br> where people can thrive, not just live. Our <br> goal
@@ -401,11 +320,9 @@
                         contribute positively to the <br> communities we serve.</span>
                 </div>
 
-
                 <div class="blog-container-content-box-6">
                     <div class="blog-container-content-box-6-img">
                         <img src="./blog-6.png" alt="">
-
                     </div>
                     <p>Focus on well being</p>
                     <span>we create environments where health and <br> happiness thrive. Our projects are designed <br>
@@ -416,14 +333,9 @@
         </div>
     </section>
 
-
-
     <section class="completed-projects">
-
         <div class="container">
-
             <span class="sub-heading">Completed Projects</span>
-
             <h2>
                 Where Every Project Tells a Story of
                 <br>
@@ -431,122 +343,93 @@
             </h2>
 
             <div class="project-slider">
-
                 <div class="project-track">
-
-                    <!-- Card 1 -->
                     <div class="project-card">
                         <img src="./p-1.png" alt="">
-
                         <div class="overlay"></div>
-
                         <div class="project-content">
                             <div class="project-left">
                                 <h3>CITY HOME CENTURY ONE</h3>
                                 <p>1/2 BHK Premium Apartment</p>
                             </div>
-
                             <a href="#" class="details-btn">
                                 Check Details <span>→</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Card 2 -->
                     <div class="project-card">
                         <img src="./p-2.png" alt="">
-
                         <div class="overlay"></div>
-
                         <div class="project-content">
                             <div class="project-left">
                                 <h3>CITY HOME CENTURY TWO</h3>
                                 <p>1/2 BHK Premium Apartment</p>
                             </div>
-
                             <a href="#" class="details-btn">
                                 Check Details <span>→</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Card 3 -->
                     <div class="project-card">
                         <img src="./p-3.png" alt="">
-
                         <div class="overlay"></div>
-
                         <div class="project-content">
                             <div class="project-left">
                                 <h3>CITY HOME ROYAL</h3>
                                 <p>1/2 BHK Premium Apartment</p>
                             </div>
-
                             <a href="#" class="details-btn">
                                 Check Details <span>→</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Card 4 -->
                     <div class="project-card">
                         <img src="./p-1.png" alt="">
-
                         <div class="overlay"></div>
-
                         <div class="project-content">
                             <div class="project-left">
                                 <h3>CITY HOME CENTURY ONE</h3>
                                 <p>1/2 BHK Premium Apartment</p>
                             </div>
-
                             <a href="#" class="details-btn">
                                 Check Details <span>→</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Card 5 -->
                     <div class="project-card">
                         <img src="./p-2.png" alt="">
-
                         <div class="overlay"></div>
-
                         <div class="project-content">
                             <div class="project-left">
                                 <h3>CITY HOME CENTURY TWO</h3>
                                 <p>1/2 BHK Premium Apartment</p>
                             </div>
-
                             <a href="#" class="details-btn">
                                 Check Details <span>→</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Card 6 -->
                     <div class="project-card">
                         <img src="./p-3.png" alt="">
-
                         <div class="overlay"></div>
-
                         <div class="project-content">
                             <div class="project-left">
                                 <h3>CITY HOME ROYAL</h3>
                                 <p>1/2 BHK Premium Apartment</p>
                             </div>
-
                             <a href="#" class="details-btn">
                                 Check Details <span>→</span>
                             </a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
-            <!-- ====== NEW: Bottom Navigation Buttons ====== -->
             <div class="slider-bottom-nav">
                 <button class="project-prev">&#8592;</button>
                 <button class="project-next">&#8594;</button>
@@ -557,40 +440,21 @@
                     View All <span>→</span>
                 </a>
             </div>
-
         </div>
-
     </section>
 
-
-
-
-
-    <!-- ===========================
-    Testimonials Section
-=========================== -->
-
     <section class="testimonials-section">
-
         <div class="testimonial-container">
-
-            <!-- Heading -->
             <div class="testimonial-top">
-
                 <div class="testimonial-heading">
-
                     <span>Testimonials</span>
-
                     <h2>
                         Why homeowners and investors
                         <br>
                         trust Turban
                     </h2>
-
                 </div>
-
                 <div class="testimonial-description">
-
                     <p>
                         At Turban Group, we believe every great achievement begins as a dream. <br>
                         As the saying goes, "Everything is created twice, first in the mind and then in <br>
@@ -599,317 +463,175 @@
                         landmark
                         in its own right, designed to inspire and endure for <br> generations.
                     </p>
-
                 </div>
-
             </div>
 
-
-
-            <!-- Background Section -->
             <div class="testimonial-wrapper">
-
-
-
                 <div class="testimonial-content">
-
-                    <!-- Left Image -->
                     <div class="testimonial-image">
-
                         <img src="./t-1.png" alt="">
-
                     </div>
-
-                    <!-- Right Slider -->
                     <div class="testimonial-slider">
-
                         <div class="testimonial-track">
-
-                            <!-- Slide 1 -->
                             <div class="testimonial-card">
-
                                 <p class="review">
                                     Process was transparent, and the team kept me updated at <br> every stage.
                                     This was not just smart business—it was <br> satisfying.
                                 </p>
-
                                 <div class="testimonial-bottom">
-
                                     <h3>Shiv Agrawal</h3>
-
                                     <div class="testimonial-buttons">
-
                                         <button class="prev-btn">&#8592;</button>
-
                                         <button class="next-btn">&#8594;</button>
-
                                     </div>
-
                                 </div>
-
                             </div>
 
-                            <!-- Slide 2 -->
                             <div class="testimonial-card">
-
                                 <p class="review">
                                     Excellent customer support from booking to possession.
                                     Every promise was fulfilled professionally.
                                 </p>
-
                                 <div class="testimonial-bottom">
-
                                     <h3>Rahul Sharma</h3>
-
                                     <div class="testimonial-buttons">
-
                                         <button class="prev-btn">&#8592;</button>
-
                                         <button class="next-btn">&#8594;</button>
-
                                     </div>
-
                                 </div>
-
                             </div>
 
-                            <!-- Slide 3 -->
                             <div class="testimonial-card">
-
                                 <p class="review">
                                     I truly appreciate the quality of construction and timely delivery.
                                     Highly recommended to every home buyer.
                                 </p>
-
                                 <div class="testimonial-bottom">
-
                                     <h3>Priya Mehta</h3>
-
                                     <div class="testimonial-buttons">
-
                                         <button class="prev-btn">&#8592;</button>
-
                                         <button class="next-btn">&#8594;</button>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
-
-
             </div>
-
         </div>
     </section>
 
-
-    <!-- ===========================
-      Ready To Move Section
-=========================== -->
-
     <section class="ready-section">
-
         <div class="ready-container">
-
             <h2>Ready to Make Your Next Move?</h2>
-
             <p>
                 Discover exceptional personalized real estate solutions tailored to your goals.
             </p>
-
             <a href="#">
                 Lets Connect →
             </a>
-
         </div>
-
     </section>
 
-
-
-
     <section class="ongoing-projects">
-
         <div class="ongoing-container">
-
-            <!-- Heading -->
             <div class="ongoing-heading">
-
                 <span>On Going Projects</span>
-
                 <h2>
                     Where Every Project Tells a Story of
                     <br>
                     Excellence and Unwavering Trust
                 </h2>
-
             </div>
 
-            <!-- Slider -->
             <div class="ongoing-slider">
-
                 <div class="ongoing-track">
-
-                    <!-- Card 1 -->
                     <div class="ongoing-card">
-
                         <div class="ongoing-image">
-
                             <img src="./on-1.png" alt="">
-
                         </div>
-
                         <div class="ongoing-content">
-
                             <h3>CITY HOME CENTURY ONE</h3>
-
                             <p>1/2 BHK Premium Apartment</p>
-
                             <a href="#">
                                 Check Details →
                             </a>
-
                         </div>
-
                     </div>
 
-                    <!-- Card 2 -->
                     <div class="ongoing-card">
-
                         <div class="ongoing-image">
-
                             <img src="./on-2.png" alt="">
-
                         </div>
-
                         <div class="ongoing-content">
-
                             <h3>CITY HOME CENTURY ONE</h3>
-
                             <p>1/2 BHK Premium Apartment</p>
-
                             <a href="#">
                                 Check Details →
                             </a>
-
                         </div>
-
                     </div>
 
-                    <!-- Card 3 -->
                     <div class="ongoing-card">
-
                         <div class="ongoing-image">
-
                             <img src="./on-3.png" alt="">
-
                         </div>
-
                         <div class="ongoing-content">
-
                             <h3>CITY HOME CENTURY ONE</h3>
-
                             <p>1/2 BHK Premium Apartment</p>
-
                             <a href="#">
                                 Check Details →
                             </a>
-
                         </div>
-
                     </div>
 
-                    <!-- Card 4 -->
                     <div class="ongoing-card">
-
                         <div class="ongoing-image">
-
                             <img src="./on-1.png" alt="">
-
                         </div>
-
                         <div class="ongoing-content">
-
                             <h3>CITY HOME CENTURY ONE</h3>
-
                             <p>1/2 BHK Premium Apartment</p>
-
                             <a href="#">
                                 Check Details →
                             </a>
-
                         </div>
-
                     </div>
 
-                    <!-- Card 5 -->
                     <div class="ongoing-card">
-
                         <div class="ongoing-image">
-
                             <img src="./on-2.png" alt="">
-
                         </div>
-
                         <div class="ongoing-content">
-
                             <h3>CITY HOME CENTURY ONE</h3>
-
                             <p>1/2 BHK Premium Apartment</p>
-
                             <a href="#">
                                 Check Details →
                             </a>
-
                         </div>
-
                     </div>
 
-                    <!-- Card 6 -->
                     <div class="ongoing-card">
-
                         <div class="ongoing-image">
-
                             <img src="./on-3.png" alt="">
-
                         </div>
-
                         <div class="ongoing-content">
-
                             <h3>CITY HOME CENTURY ONE</h3>
-
                             <p>1/2 BHK Premium Apartment</p>
-
                             <a href="#">
                                 Check Details →
                             </a>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
-            <!-- ====== NEW: Bottom Navigation Buttons ====== -->
             <div class="slider-bottom-nav">
                 <button class="ongoing-prev">&#8592;</button>
                 <button class="ongoing-next">&#8594;</button>
             </div>
-
         </div>
-
     </section>
-
 
     <section class="dream-section">
         <div class="dream-container">
@@ -930,8 +652,6 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
-
-
 
                 <div class="dream-content-box">
                     <div class="dream-content-box-img">
@@ -1025,8 +745,8 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
-
             </div>
+
             <div class="dream-content">
                 <div class="dream-content-box">
                     <div class="dream-content-box-img">
@@ -1134,253 +854,154 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-
-
-
     <section class="feature-projects">
-
         <div class="feature-wrapper">
-
             <div class="feature-slider">
-
                 <div class="feature-track">
-
-                    <!-- Card-1 -->
                     <div class="feature-card">
-
                         <div class="feature-image">
-
                             <img src="./l-1.png" alt="">
-
                             <div class="feature-overlay"></div>
-
-                            <!-- NAYA: Hover Overlay -->
                             <div class="feature-hover-overlay"></div>
-
                             <div class="feature-content">
-
                                 <h3>Project in Jagatpura</h3>
-
                                 <div class="feature-hover-content">
                                     <p class="coming-soon">Coming Soon</p>
                                     <a href="#" class="feature-btn">
                                         Connect us <span class="arrow">→</span>
                                     </a>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
                     <div class="feature-card">
-
                         <div class="feature-image">
-
                             <img src="./l-2.png" alt="">
-
                             <div class="feature-overlay"></div>
-
                             <div class="feature-hover-overlay"></div>
-
                             <div class="feature-content">
-
                                 <h3>Project at Delhi Road</h3>
-
                                 <div class="feature-hover-content">
                                     <p class="coming-soon">Coming Soon</p>
                                     <a href="#" class="feature-btn">
                                         Connect us <span class="arrow">→</span>
                                     </a>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <!-- Card-3 -->
                     <div class="feature-card">
-
                         <div class="feature-image">
-
                             <img src="./l-3.png" alt="">
-
                             <div class="feature-overlay"></div>
-
                             <div class="feature-hover-overlay"></div>
-
                             <div class="feature-content">
-
                                 <h3>Project in Jagatpura</h3>
-
                                 <div class="feature-hover-content">
                                     <p class="coming-soon">Coming Soon</p>
                                     <a href="#" class="feature-btn">
                                         Connect us <span class="arrow">→</span>
                                     </a>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <!-- Card-4 -->
                     <div class="feature-card">
-
                         <div class="feature-image">
-
                             <img src="./l-1.png" alt="">
-
                             <div class="feature-overlay"></div>
-
                             <div class="feature-hover-overlay"></div>
-
                             <div class="feature-content">
-
                                 <h3>Luxury Villas</h3>
-
                                 <div class="feature-hover-content">
                                     <p class="coming-soon">Coming Soon</p>
                                     <a href="#" class="feature-btn">
                                         Connect us <span class="arrow">→</span>
                                     </a>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <!-- Card-5 -->
                     <div class="feature-card">
-
                         <div class="feature-image">
-
                             <img src="./l-2.png" alt="">
-
                             <div class="feature-overlay"></div>
-
                             <div class="feature-hover-overlay"></div>
-
                             <div class="feature-content">
-
                                 <h3>Premium Residency</h3>
-
                                 <div class="feature-hover-content">
                                     <p class="coming-soon">Coming Soon</p>
                                     <a href="#" class="feature-btn">
                                         Connect us <span class="arrow">→</span>
                                     </a>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <!-- Card-6 -->
                     <div class="feature-card">
-
                         <div class="feature-image">
-
                             <img src="./l-3.png" alt="">
-
                             <div class="feature-overlay"></div>
-
                             <div class="feature-hover-overlay"></div>
-
                             <div class="feature-content">
-
                                 <h3>Modern Township</h3>
-
                                 <div class="feature-hover-content">
                                     <p class="coming-soon">Coming Soon</p>
                                     <a href="#" class="feature-btn">
                                         Connect us <span class="arrow">→</span>
                                     </a>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
-            <!-- ====== NEW: Bottom Navigation Buttons ====== -->
             <div class="slider-bottom-nav">
                 <button class="feature-prev">&#8592;</button>
                 <button class="feature-next">&#8594;</button>
             </div>
-
         </div>
-
     </section>
 
-
     <section class="contact-section">
-
-        <!-- Left Image -->
         <div class="left-image">
-
-            <!-- Image Lagani Hai -->
             <img src="./contact.png" alt="Bedroom">
-
         </div>
 
-
-        <!-- Right Form -->
         <div class="right-side">
-
             <div class="contact-box">
-
                 <h2>Get In Touch</h2>
-
                 <p>
                     Take the First Step Toward Your Dream Home
                 </p>
 
                 <form>
-
                     <div class="form-row">
-
                         <div class="input-box">
                             <input type="text" placeholder="Full Name">
                         </div>
-
                         <div class="input-box">
                             <input type="email" placeholder="Email">
                         </div>
-
                     </div>
 
-
                     <div class="form-row">
-
                         <div class="input-box">
                             <input type="text" placeholder="+91-">
                         </div>
-
                         <div class="input-box">
                             <input type="text" placeholder="My Budget">
                         </div>
-
                     </div>
-
 
                     <div class="input-box full">
                         <input type="text" placeholder="I am interested in">
@@ -1391,57 +1012,33 @@
                     </div>
 
                     <div class="input-box full">
-
                         <textarea rows="4" placeholder="Message For Us"></textarea>
-
                     </div>
 
-
                     <div class="bottom-row">
-
                         <label class="checkbox">
-
                             <input type="checkbox">
-
                             <span class="checkmark">
                                 <i class="fa-solid fa-check"></i>
                             </span>
-
                             <span class="policy">
                                 I agree with the Privacy Policy
                             </span>
-
                         </label>
 
-
                         <button class="submit-1" type="submit">
-
                             Lets Connect
-
                             <i class="fa-solid fa-arrow-right-long"></i>
-
                         </button>
-
                     </div>
-
                 </form>
-
             </div>
-
         </div>
-
     </section>
 
-
-
-
     <footer class="footer">
-
         <div class="footer-container">
-
-            <!-- Left Side -->
             <div class="footer-left">
-
                 <div class="footer-logo">
                     <img src="./logo-2.png" alt="Logo">
                 </div>
@@ -1455,99 +1052,68 @@
                 <div class="divider"></div>
 
                 <div class="office">
-
                     <h3>Corporate Office</h3>
-
                     <p>
                         1st Floor, Plot No 262,
                         Nirman Nagar C,<br>
                         Opp Shyam Nagar Police Station,
                         Kings Road, Jaipur
                     </p>
-
                 </div>
 
                 <div class="contact-info">
-
                     <div class="info-box">
-
                         <i class="fa-solid fa-phone"></i>
-
                         <div>
                             <h4>Connect us</h4>
                             <span>9982 040 123</span>
                         </div>
-
                     </div>
 
                     <div class="info-box">
-
                         <i class="fa-regular fa-envelope"></i>
-
                         <div>
                             <h4>Email</h4>
                             <span>sales@turbanbuilders.com</span>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
-            <!-- Right Side -->
             <div class="footer-right">
-
                 <div class="footer-links">
-
                     <div class="link-column">
-
                         <h4>PROJECTS</h4>
-
                         <ul>
-
                             <li><a href="#">Century One</a></li>
                             <li><a href="#">The Century Garden</a></li>
                             <li><a href="#">Century One</a></li>
                             <li><a href="#">The Century Garden</a></li>
                             <li><a href="#">Century One</a></li>
-
                         </ul>
-
                     </div>
 
                     <div class="link-column">
-
                         <h4>ABOUT</h4>
-
                         <ul>
-
                             <li><a href="#">The Group</a></li>
                             <li><a href="#">Our Strength</a></li>
                             <li><a href="#">Our Core Team</a></li>
                             <li><a href="#">Vision</a></li>
                             <li><a href="#">Our Beliefs</a></li>
-
                         </ul>
-
                     </div>
 
                     <div class="link-column">
-
                         <h4>COMPANY</h4>
-
                         <ul>
-
                             <li><a href="#">Media</a></li>
                             <li><a href="#">Blogs</a></li>
                             <li><a href="#">Career</a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Privacy Policy</a></li>
-
                         </ul>
-
                     </div>
-
                 </div>
 
                 <div class="map-box">
@@ -1557,28 +1123,69 @@
                         referrerpolicy="no-referrer-when-downgrade" title="Turban Builders Corporate Office Location">
                     </iframe>
                 </div>
-
             </div>
-
         </div>
 
         <div class="copyright">
-
             Copyright 2025 Turban Builders & Promoters Pvt. Ltd.
             All Right Reserved
-
         </div>
-
     </footer>
 
-
-
-
-
-
-
     <script>
+        // ============================================================
+        // SCROLL EFFECT: Header-top hide, Header-main fixed
+        // ============================================================
         document.addEventListener("DOMContentLoaded", () => {
+
+            const headerTop = document.getElementById("headerTop");
+            const headerMain = document.getElementById("headerMain");
+            const header = document.getElementById("header");
+
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > 10) {
+                    // Scroll down - hide header-top, make header-main fixed
+                    headerTop.style.transform = "translateY(-100%)";
+                    headerTop.style.opacity = "0";
+                    headerTop.style.transition = "transform 0.4s ease, opacity 0.4s ease";
+
+                    headerMain.style.position = "fixed";
+                    headerMain.style.top = "0";
+                    headerMain.style.left = "0";
+                    headerMain.style.width = "100%";
+                    headerMain.style.zIndex = "999";
+                    headerMain.style.boxShadow = "0 2px 20px rgba(0,0,0,0.1)";
+                    headerMain.style.background = "#F7F2E8";
+
+                    // Push body down so content doesn't jump
+                    if (!header.style.paddingTop) {
+                        header.style.paddingTop = headerMain.offsetHeight + "px";
+                    }
+
+                } else {
+                    // Scroll to top - show header-top again
+                    headerTop.style.transform = "translateY(0)";
+                    headerTop.style.opacity = "1";
+
+                    headerMain.style.position = "relative";
+                    headerMain.style.top = "auto";
+                    headerMain.style.left = "auto";
+                    headerMain.style.width = "100%";
+                    headerMain.style.zIndex = "auto";
+                    headerMain.style.boxShadow = "none";
+                    headerMain.style.background = "#F7F2E8";
+
+                    header.style.paddingTop = "0";
+                }
+
+                lastScrollY = currentScrollY;
+
+            });
 
             // ========== HAMBURGER MENU ==========
             const hamburgerBtn = document.getElementById("hamburgerBtn");
@@ -1657,623 +1264,452 @@
 
             counters.forEach(counter => counterObserver.observe(counter));
 
-        });
+            // ============================================================
+            // COMPLETED PROJECTS SLIDER
+            // ============================================================
+            const projectTrack = document.querySelector(".project-track");
+            const projectCards = [...document.querySelectorAll(".project-card")];
 
-        // ============================================================
-        // COMPLETED PROJECTS SLIDER
-        // ============================================================
-        document.addEventListener("DOMContentLoaded", () => {
+            if (projectTrack && projectCards.length > 0) {
+                const firstClone = projectCards[0].cloneNode(true);
+                const lastClone = projectCards[projectCards.length - 1].cloneNode(true);
 
-            const track = document.querySelector(".project-track");
-            const cards = [...document.querySelectorAll(".project-card")];
+                projectTrack.appendChild(firstClone);
+                projectTrack.insertBefore(lastClone, projectCards[0]);
 
-            if (!track || cards.length === 0) return;
+                const allProjectCards = document.querySelectorAll(".project-card");
+                let projectIndex = 1;
+                let projectCardWidth = allProjectCards[0].offsetWidth;
+                let projectGap = 30;
 
-            // First & Last Clone
-            const firstClone = cards[0].cloneNode(true);
-            const lastClone = cards[cards.length - 1].cloneNode(true);
+                function updateProjectSlider(animation = true) {
+                    projectCardWidth = allProjectCards[0].offsetWidth;
 
-            track.appendChild(firstClone);
-            track.insertBefore(lastClone, cards[0]);
+                    if (animation) {
+                        projectTrack.style.transition = "transform .8s ease";
+                    } else {
+                        projectTrack.style.transition = "none";
+                    }
 
-            const allCards = document.querySelectorAll(".project-card");
+                    const slider = document.querySelector(".project-slider");
+                    const sliderWidth = slider.offsetWidth;
 
-            let index = 1;
+                    const translate =
+                        projectIndex * (projectCardWidth + projectGap) -
+                        ((sliderWidth - projectCardWidth) / 2);
 
-            let cardWidth = allCards[0].offsetWidth;
-            let gap = 30;
+                    projectTrack.style.transform = `translateX(-${translate}px)`;
 
-            function updateSlider(animation = true) {
+                    allProjectCards.forEach(card => card.classList.remove("active"));
 
-                cardWidth = allCards[0].offsetWidth;
-
-                if (animation) {
-                    track.style.transition = "transform .8s ease";
-                } else {
-                    track.style.transition = "none";
+                    if (allProjectCards[projectIndex]) {
+                        allProjectCards[projectIndex].classList.add("active");
+                    }
                 }
 
-                const slider = document.querySelector(".project-slider");
-                const sliderWidth = slider.offsetWidth;
+                updateProjectSlider(false);
 
-                const translate =
-                    index * (cardWidth + gap) -
-                    ((sliderWidth - cardWidth) / 2);
-
-                track.style.transform = `translateX(-${translate}px)`;
-
-                allCards.forEach(card => card.classList.remove("active"));
-
-                if (allCards[index]) {
-                    allCards[index].classList.add("active");
+                function nextProjectSlide() {
+                    projectIndex++;
+                    updateProjectSlider(true);
                 }
 
-            }
+                function prevProjectSlide() {
+                    projectIndex--;
+                    updateProjectSlider(true);
+                }
 
-            updateSlider(false);
+                const projectNext = document.querySelector(".project-next");
+                const projectPrev = document.querySelector(".project-prev");
 
-            function nextSlide() {
+                if (projectNext) {
+                    projectNext.addEventListener("click", () => {
+                        nextProjectSlide();
+                        resetProjectAuto();
+                    });
+                }
 
-                index++;
+                if (projectPrev) {
+                    projectPrev.addEventListener("click", () => {
+                        prevProjectSlide();
+                        resetProjectAuto();
+                    });
+                }
 
-                updateSlider(true);
+                let projectAuto = setInterval(nextProjectSlide, 3000);
 
-            }
+                function resetProjectAuto() {
+                    clearInterval(projectAuto);
+                    projectAuto = setInterval(nextProjectSlide, 3000);
+                }
 
-            function prevSlide() {
+                projectTrack.addEventListener("mouseenter", () => {
+                    clearInterval(projectAuto);
+                });
 
-                index--;
+                projectTrack.addEventListener("mouseleave", () => {
+                    projectAuto = setInterval(nextProjectSlide, 3000);
+                });
 
-                updateSlider(true);
+                projectTrack.addEventListener("transitionend", () => {
+                    if (projectIndex === allProjectCards.length - 1) {
+                        projectIndex = 1;
+                        updateProjectSlider(false);
+                    }
 
-            }
+                    if (projectIndex === 0) {
+                        projectIndex = allProjectCards.length - 2;
+                        updateProjectSlider(false);
+                    }
+                });
 
-            // ===== BOTTOM BUTTONS =====
-            const bottomNext = document.querySelector(".project-next");
-            const bottomPrev = document.querySelector(".project-prev");
-
-            if (bottomNext) {
-                bottomNext.addEventListener("click", () => {
-                    nextSlide();
-                    resetAuto();
+                window.addEventListener("resize", () => {
+                    updateProjectSlider(false);
                 });
             }
 
-            if (bottomPrev) {
-                bottomPrev.addEventListener("click", () => {
-                    prevSlide();
-                    resetAuto();
-                });
-            }
-
-            let auto = setInterval(nextSlide, 3000);
-
-            function resetAuto() {
-                clearInterval(auto);
-                auto = setInterval(nextSlide, 3000);
-            }
-
-            track.addEventListener("mouseenter", () => {
-
-                clearInterval(auto);
-
-            });
-
-            track.addEventListener("mouseleave", () => {
-
-                auto = setInterval(nextSlide, 3000);
-
-            });
-
-            track.addEventListener("transitionend", () => {
-
-                if (index === allCards.length - 1) {
-
-                    index = 1;
-
-                    updateSlider(false);
-
-                }
-
-                if (index === 0) {
-
-                    index = allCards.length - 2;
-
-                    updateSlider(false);
-
-                }
-
-            });
-
-            window.addEventListener("resize", () => {
-
-                updateSlider(false);
-
-            });
-
-        });
-
-
-        // ============================================================
-        // TESTIMONIALS SLIDER (No changes - existing buttons only)
-        // ============================================================
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const track = document.querySelector(".testimonial-track");
-            const slides = document.querySelectorAll(".testimonial-card");
-
+            // ============================================================
+            // TESTIMONIALS SLIDER
+            // ============================================================
+            const testimonialTrack = document.querySelector(".testimonial-track");
+            const testimonialSlides = document.querySelectorAll(".testimonial-card");
             const nextBtns = document.querySelectorAll(".next-btn");
             const prevBtns = document.querySelectorAll(".prev-btn");
 
-            let current = 0;
-            const total = slides.length;
+            let testimonialCurrent = 0;
+            const testimonialTotal = testimonialSlides.length;
 
-            function updateSlider() {
-
-                track.style.transform = `translateX(-${current * 100}%)`;
-
+            function updateTestimonialSlider() {
+                testimonialTrack.style.transform = `translateX(-${testimonialCurrent * 100}%)`;
             }
 
-            function nextSlide() {
-
-                current++;
-
-                if (current >= total) {
-                    current = 0;
+            function nextTestimonialSlide() {
+                testimonialCurrent++;
+                if (testimonialCurrent >= testimonialTotal) {
+                    testimonialCurrent = 0;
                 }
-
-                updateSlider();
-
+                updateTestimonialSlider();
             }
 
-            function prevSlide() {
-
-                current--;
-
-                if (current < 0) {
-                    current = total - 1;
+            function prevTestimonialSlide() {
+                testimonialCurrent--;
+                if (testimonialCurrent < 0) {
+                    testimonialCurrent = testimonialTotal - 1;
                 }
-
-                updateSlider();
-
+                updateTestimonialSlider();
             }
 
             nextBtns.forEach(btn => {
-
                 btn.addEventListener("click", () => {
-
-                    nextSlide();
-
-                    resetAuto();
-
+                    nextTestimonialSlide();
+                    resetTestimonialAuto();
                 });
-
             });
 
             prevBtns.forEach(btn => {
-
                 btn.addEventListener("click", () => {
-
-                    prevSlide();
-
-                    resetAuto();
-
+                    prevTestimonialSlide();
+                    resetTestimonialAuto();
                 });
-
             });
 
-            let autoSlide = setInterval(nextSlide, 5000);
+            let testimonialAuto = setInterval(nextTestimonialSlide, 5000);
 
-            function resetAuto() {
-
-                clearInterval(autoSlide);
-
-                autoSlide = setInterval(nextSlide, 5000);
-
+            function resetTestimonialAuto() {
+                clearInterval(testimonialAuto);
+                testimonialAuto = setInterval(nextTestimonialSlide, 5000);
             }
 
-            const slider = document.querySelector(".testimonial-slider");
+            const testimonialSlider = document.querySelector(".testimonial-slider");
+            if (testimonialSlider) {
+                testimonialSlider.addEventListener("mouseenter", () => {
+                    clearInterval(testimonialAuto);
+                });
 
-            slider.addEventListener("mouseenter", () => {
+                testimonialSlider.addEventListener("mouseleave", () => {
+                    testimonialAuto = setInterval(nextTestimonialSlide, 5000);
+                });
+            }
 
-                clearInterval(autoSlide);
+            // ============================================================
+            // ONGOING PROJECTS SLIDER
+            // ============================================================
+            const ongoingTrack = document.querySelector(".ongoing-track");
+            if (ongoingTrack) {
+                const ongoingCards = [...ongoingTrack.children];
 
-            });
+                ongoingCards.forEach(card => {
+                    ongoingTrack.appendChild(card.cloneNode(true));
+                });
 
-            slider.addEventListener("mouseleave", () => {
+                const ongoingGap = 30;
+                let ongoingCardWidth = ongoingCards[0].offsetWidth + ongoingGap;
+                let ongoingIndex = 0;
+                let ongoingIsAnimating = false;
 
-                autoSlide = setInterval(nextSlide, 5000);
+                ongoingTrack.style.transition = "transform .8s ease";
 
-            });
+                function slideOngoingNext() {
+                    if (ongoingIsAnimating) return;
+                    ongoingIsAnimating = true;
 
-        });
+                    ongoingIndex++;
+                    ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
 
-
-        // ============================================================
-        // ONGOING PROJECTS SLIDER
-        // ============================================================
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const track = document.querySelector(".ongoing-track");
-
-            if (!track) return;
-
-            const cards = [...track.children];
-
-            // Infinite loop ke liye clone
-            cards.forEach(card => {
-                track.appendChild(card.cloneNode(true));
-            });
-
-            const gap = 30;
-            const cardWidth = cards[0].offsetWidth + gap;
-
-            let index = 0;
-            let isAnimating = false;
-
-            track.style.transition = "transform .8s ease";
-
-            function slideNext() {
-
-                if (isAnimating) return;
-
-                isAnimating = true;
-
-                index++;
-
-                track.style.transform = `translateX(-${index * cardWidth}px)`;
-
-                if (index >= cards.length) {
+                    if (ongoingIndex >= ongoingCards.length) {
+                        setTimeout(() => {
+                            ongoingTrack.style.transition = "none";
+                            ongoingIndex = 0;
+                            ongoingTrack.style.transform = "translateX(0px)";
+                            requestAnimationFrame(() => {
+                                requestAnimationFrame(() => {
+                                    ongoingTrack.style.transition = "transform .8s ease";
+                                });
+                            });
+                        }, 800);
+                    }
 
                     setTimeout(() => {
-
-                        track.style.transition = "none";
-
-                        index = 0;
-
-                        track.style.transform = "translateX(0px)";
-
-                        requestAnimationFrame(() => {
-
-                            requestAnimationFrame(() => {
-
-                                track.style.transition = "transform .8s ease";
-
-                            });
-
-                        });
-
+                        ongoingIsAnimating = false;
                     }, 800);
-
                 }
 
-                setTimeout(() => {
+                function slideOngoingPrev() {
+                    if (ongoingIsAnimating) return;
+                    ongoingIsAnimating = true;
 
-                    isAnimating = false;
-
-                }, 800);
-
-            }
-
-            function slidePrev() {
-
-                if (isAnimating) return;
-
-                isAnimating = true;
-
-                index--;
-
-                if (index < 0) {
-                    index = cards.length - 1;
-                    track.style.transition = "none";
-                    track.style.transform = `translateX(-${index * cardWidth}px)`;
-                    requestAnimationFrame(() => {
+                    ongoingIndex--;
+                    if (ongoingIndex < 0) {
+                        ongoingIndex = ongoingCards.length - 1;
+                        ongoingTrack.style.transition = "none";
+                        ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
                         requestAnimationFrame(() => {
-                            track.style.transition = "transform .8s ease";
-                            index = cards.length - 2;
-                            slidePrev();
+                            requestAnimationFrame(() => {
+                                ongoingTrack.style.transition = "transform .8s ease";
+                                ongoingIndex = ongoingCards.length - 2;
+                                slideOngoingPrev();
+                            });
                         });
-                    });
-                    return;
-                }
+                        return;
+                    }
 
-                track.style.transform = `translateX(-${index * cardWidth}px)`;
-
-                setTimeout(() => {
-
-                    isAnimating = false;
-
-                }, 800);
-
-            }
-
-            // ===== BOTTOM BUTTONS =====
-            const bottomNext = document.querySelector(".ongoing-next");
-            const bottomPrev = document.querySelector(".ongoing-prev");
-
-            if (bottomNext) {
-                bottomNext.addEventListener("click", () => {
-                    slideNext();
-                    resetAutoOngoing();
-                });
-            }
-
-            if (bottomPrev) {
-                bottomPrev.addEventListener("click", () => {
-                    slidePrev();
-                    resetAutoOngoing();
-                });
-            }
-
-            let auto = setInterval(slideNext, 4000);
-
-            function resetAutoOngoing() {
-                clearInterval(auto);
-                auto = setInterval(slideNext, 4000);
-            }
-
-            const slider = document.querySelector(".ongoing-slider");
-
-            slider.addEventListener("mouseenter", () => {
-
-                clearInterval(auto);
-
-            });
-
-            slider.addEventListener("mouseleave", () => {
-
-                auto = setInterval(slideNext, 4000);
-
-            });
-
-            window.addEventListener("resize", () => {
-
-                const newWidth = cards[0].offsetWidth + gap;
-
-                track.style.transition = "none";
-
-                track.style.transform = `translateX(-${index * newWidth}px)`;
-
-                requestAnimationFrame(() => {
-
-                    track.style.transition = "transform .8s ease";
-
-                });
-
-            });
-
-        });
-
-
-        // ============================================================
-        // FEATURE PROJECTS SLIDER
-        // ============================================================
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const track = document.querySelector(".feature-track");
-
-            if (!track) return;
-
-            const cards = [...track.children];
-
-            // Clone for Infinite Loop
-            cards.forEach(card => {
-                track.appendChild(card.cloneNode(true));
-            });
-
-            let gap = 4;
-            let cardWidth = cards[0].offsetWidth + gap;
-
-            let currentIndex = 0;
-            let isAnimating = false;
-
-            track.style.transition = "transform .8s ease";
-
-            function slideNext() {
-
-                if (isAnimating) return;
-
-                isAnimating = true;
-
-                currentIndex++;
-
-                track.style.transform =
-                    `translateX(-${currentIndex * cardWidth}px)`;
-
-                if (currentIndex >= cards.length) {
+                    ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
 
                     setTimeout(() => {
-
-                        track.style.transition = "none";
-
-                        currentIndex = 0;
-
-                        track.style.transform = "translateX(0px)";
-
-                        requestAnimationFrame(() => {
-
-                            requestAnimationFrame(() => {
-
-                                track.style.transition =
-                                    "transform .8s ease";
-
-                            });
-
-                        });
-
+                        ongoingIsAnimating = false;
                     }, 800);
-
                 }
 
-                setTimeout(() => {
+                const ongoingNextBtn = document.querySelector(".ongoing-next");
+                const ongoingPrevBtn = document.querySelector(".ongoing-prev");
 
-                    isAnimating = false;
-
-                }, 800);
-
-            }
-
-            function slidePrev() {
-
-                if (isAnimating) return;
-
-                isAnimating = true;
-
-                currentIndex--;
-
-                if (currentIndex < 0) {
-                    currentIndex = cards.length - 1;
-                    track.style.transition = "none";
-                    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-                    requestAnimationFrame(() => {
-                        requestAnimationFrame(() => {
-                            track.style.transition = "transform .8s ease";
-                            currentIndex = cards.length - 2;
-                            slidePrev();
-                        });
+                if (ongoingNextBtn) {
+                    ongoingNextBtn.addEventListener("click", () => {
+                        slideOngoingNext();
+                        resetOngoingAuto();
                     });
-                    return;
                 }
 
-                track.style.transform =
-                    `translateX(-${currentIndex * cardWidth}px)`;
+                if (ongoingPrevBtn) {
+                    ongoingPrevBtn.addEventListener("click", () => {
+                        slideOngoingPrev();
+                        resetOngoingAuto();
+                    });
+                }
 
-                setTimeout(() => {
+                let ongoingAuto = setInterval(slideOngoingNext, 4000);
 
-                    isAnimating = false;
+                function resetOngoingAuto() {
+                    clearInterval(ongoingAuto);
+                    ongoingAuto = setInterval(slideOngoingNext, 4000);
+                }
 
-                }, 800);
+                const ongoingSlider = document.querySelector(".ongoing-slider");
+                if (ongoingSlider) {
+                    ongoingSlider.addEventListener("mouseenter", () => {
+                        clearInterval(ongoingAuto);
+                    });
 
-            }
+                    ongoingSlider.addEventListener("mouseleave", () => {
+                        ongoingAuto = setInterval(slideOngoingNext, 4000);
+                    });
+                }
 
-            // ===== BOTTOM BUTTONS =====
-            const bottomNext = document.querySelector(".feature-next");
-            const bottomPrev = document.querySelector(".feature-prev");
-
-            if (bottomNext) {
-                bottomNext.addEventListener("click", () => {
-                    slideNext();
-                    resetAutoFeature();
+                window.addEventListener("resize", () => {
+                    ongoingCardWidth = ongoingCards[0].offsetWidth + ongoingGap;
+                    ongoingTrack.style.transition = "none";
+                    ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
+                    requestAnimationFrame(() => {
+                        ongoingTrack.style.transition = "transform .8s ease";
+                    });
                 });
             }
 
-            if (bottomPrev) {
-                bottomPrev.addEventListener("click", () => {
-                    slidePrev();
-                    resetAutoFeature();
+            // ============================================================
+            // FEATURE PROJECTS SLIDER
+            // ============================================================
+            const featureTrack = document.querySelector(".feature-track");
+            if (featureTrack) {
+                const featureCards = [...featureTrack.children];
+
+                featureCards.forEach(card => {
+                    featureTrack.appendChild(card.cloneNode(true));
+                });
+
+                let featureGap = 4;
+                let featureCardWidth = featureCards[0].offsetWidth + featureGap;
+                let featureIndex = 0;
+                let featureIsAnimating = false;
+
+                featureTrack.style.transition = "transform .8s ease";
+
+                function slideFeatureNext() {
+                    if (featureIsAnimating) return;
+                    featureIsAnimating = true;
+
+                    featureIndex++;
+                    featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+
+                    if (featureIndex >= featureCards.length) {
+                        setTimeout(() => {
+                            featureTrack.style.transition = "none";
+                            featureIndex = 0;
+                            featureTrack.style.transform = "translateX(0px)";
+                            requestAnimationFrame(() => {
+                                requestAnimationFrame(() => {
+                                    featureTrack.style.transition = "transform .8s ease";
+                                });
+                            });
+                        }, 800);
+                    }
+
+                    setTimeout(() => {
+                        featureIsAnimating = false;
+                    }, 800);
+                }
+
+                function slideFeaturePrev() {
+                    if (featureIsAnimating) return;
+                    featureIsAnimating = true;
+
+                    featureIndex--;
+                    if (featureIndex < 0) {
+                        featureIndex = featureCards.length - 1;
+                        featureTrack.style.transition = "none";
+                        featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+                        requestAnimationFrame(() => {
+                            requestAnimationFrame(() => {
+                                featureTrack.style.transition = "transform .8s ease";
+                                featureIndex = featureCards.length - 2;
+                                slideFeaturePrev();
+                            });
+                        });
+                        return;
+                    }
+
+                    featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+
+                    setTimeout(() => {
+                        featureIsAnimating = false;
+                    }, 800);
+                }
+
+                const featureNextBtn = document.querySelector(".feature-next");
+                const featurePrevBtn = document.querySelector(".feature-prev");
+
+                if (featureNextBtn) {
+                    featureNextBtn.addEventListener("click", () => {
+                        slideFeatureNext();
+                        resetFeatureAuto();
+                    });
+                }
+
+                if (featurePrevBtn) {
+                    featurePrevBtn.addEventListener("click", () => {
+                        slideFeaturePrev();
+                        resetFeatureAuto();
+                    });
+                }
+
+                let featureAuto = setInterval(slideFeatureNext, 4000);
+
+                function resetFeatureAuto() {
+                    clearInterval(featureAuto);
+                    featureAuto = setInterval(slideFeatureNext, 4000);
+                }
+
+                const featureSlider = document.querySelector(".feature-slider");
+                if (featureSlider) {
+                    featureSlider.addEventListener("mouseenter", () => {
+                        clearInterval(featureAuto);
+                    });
+
+                    featureSlider.addEventListener("mouseleave", () => {
+                        featureAuto = setInterval(slideFeatureNext, 4000);
+                    });
+                }
+
+                window.addEventListener("resize", () => {
+                    featureCardWidth = featureCards[0].offsetWidth + featureGap;
+                    featureTrack.style.transition = "none";
+                    featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+                    requestAnimationFrame(() => {
+                        featureTrack.style.transition = "transform .8s ease";
+                    });
                 });
             }
 
-            let autoSlide = setInterval(slideNext, 4000);
+            // ============================================================
+            // NEWS TICKER
+            // ============================================================
+            const tickerTrack = document.querySelector(".ticker-track");
+            if (tickerTrack) {
+                tickerTrack.innerHTML += tickerTrack.innerHTML;
 
-            function resetAutoFeature() {
-                clearInterval(autoSlide);
-                autoSlide = setInterval(slideNext, 4000);
+                let tickerPosition = 0;
+                const tickerSpeed = 0.4;
+
+                function tickerAnimation() {
+                    tickerPosition += tickerSpeed;
+                    if (tickerPosition >= tickerTrack.scrollWidth / 2) {
+                        tickerPosition = 0;
+                    }
+                    tickerTrack.style.transform = `translateX(-${tickerPosition}px)`;
+                    requestAnimationFrame(tickerAnimation);
+                }
+
+                tickerAnimation();
             }
 
-            const slider = document.querySelector(".feature-slider");
-
-            slider.addEventListener("mouseenter", () => {
-
-                clearInterval(autoSlide);
-
-            });
-
-            slider.addEventListener("mouseleave", () => {
-
-                autoSlide = setInterval(slideNext, 4000);
-
-            });
-
-            window.addEventListener("resize", () => {
-
-                cardWidth = cards[0].offsetWidth + gap;
-
-                track.style.transition = "none";
-
-                track.style.transform =
-                    `translateX(-${currentIndex * cardWidth}px)`;
-
-                requestAnimationFrame(() => {
-
-                    track.style.transition =
-                        "transform .8s ease";
-
+            // ============================================================
+            // COUNTER OBSERVER (Re-run for any remaining counters)
+            // ============================================================
+            const allCounters = document.querySelectorAll(".counter:not([data-counted])");
+            const counterObs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.dataset.counted) {
+                        entry.target.dataset.counted = true;
+                        const target = +entry.target.getAttribute("data-target");
+                        let count = 0;
+                        const increment = Math.ceil(target / 100);
+                        const update = () => {
+                            count += increment;
+                            if (count >= target) {
+                                entry.target.innerText = target;
+                            } else {
+                                entry.target.innerText = count;
+                                requestAnimationFrame(update);
+                            }
+                        };
+                        update();
+                        counterObs.unobserve(entry.target);
+                    }
                 });
+            }, { threshold: 0.5 });
 
-            });
-
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const track = document.querySelector(".ticker-track");
-
-            if (!track) return;
-
-            track.innerHTML += track.innerHTML;
-
-            let position = 0;
-            const speed = 0.4;
-
-            function ticker() {
-
-                position += speed;
-
-                if (position >= track.scrollWidth / 2) {
-                    position = 0;
-                }
-
-                track.style.transform = `translateX(-${position}px)`;
-
-                requestAnimationFrame(ticker);
-
-            }
-
-            ticker();
+            allCounters.forEach(counter => counterObs.observe(counter));
 
         });
-
-        const counters = document.querySelectorAll(".counter");
-
-        const observer = new IntersectionObserver((entries) => {
-
-            entries.forEach(entry => {
-
-                if (entry.isIntersecting) {
-
-                    const counter = entry.target;
-                    const target = +counter.getAttribute("data-target");
-
-                    let count = 0;
-                    const increment = Math.ceil(target / 100);
-
-                    const update = () => {
-
-                        count += increment;
-
-                        if (count >= target) {
-                            counter.innerText = target;
-                        } else {
-                            counter.innerText = count;
-                            requestAnimationFrame(update);
-                        }
-
-                    };
-
-                    update();
-
-                    observer.unobserve(counter);
-
-                }
-
-            });
-
-        }, {
-            threshold: 0.5
-        });
-
-        counters.forEach(counter => observer.observe(counter));
     </script>
 </body>
 
