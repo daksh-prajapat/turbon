@@ -441,7 +441,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -3858,7 +3858,7 @@ body {
 
     .sub-heading {
         font-size: 14px;
-        margin-bottom: 6px;
+        margin-bottom: 20px;
     }
 
     .project-card {
