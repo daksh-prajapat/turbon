@@ -485,6 +485,7 @@ body {
 }
 
 .about-container-right-text {
+    margin-bottom: 25px;
     font-family: 'Lato', sans-serif;
     width: 535px;
     height: 289px;
