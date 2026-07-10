@@ -3550,6 +3550,7 @@ body {
     }
 
     .hero-section-text {
+                padding: 25px;
         left: 12px;
         bottom: 25px;
         max-width: calc(100% - 24px);
@@ -3635,7 +3636,7 @@ body {
         height: 600px;
         margin-top: 14px;
         width: 94%;
-        margin-left: 10px;
+        margin-left: 8px;
     }
 
     .about-container-right {
