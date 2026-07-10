@@ -2244,10 +2244,6 @@ body {
     left: auto;
 }
 
-/* ============================================================
-   TABLET & MOBILE MEDIA QUERIES
-   ============================================================ */
-
 @media (min-width: 1024px) and (max-width: 1399px) {
 
     .header-top-right,
@@ -3459,9 +3455,81 @@ body {
 }
 
 /* ============================================================
-   MOBILE VIEW - SLIDER FIXES
+   MOBILE VIEW - SLIDER FIXES + 12px PADDING
    ============================================================ */
 @media (max-width: 767px) {
+    /* ---- 12px LEFT-RIGHT PADDING ON ALL MOBILE SECTIONS ---- */
+    .header-top {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .header-main {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .hero-section-text {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .about-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .blog-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .completed-projects .container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .ongoing-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .dream-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .feature-wrapper {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .testimonial-top {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .testimonial-content {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .ready-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .contact-section {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .footer-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    /* ---- HEADER ---- */
     .header-top {
         height: auto;
         padding: 4px 12px;
@@ -3537,6 +3605,7 @@ body {
         height: 34px;
     }
 
+    /* ---- HERO ---- */
     .hero-section {
         height: 58vh;
         min-height: 300px;
@@ -3586,6 +3655,7 @@ body {
         padding: 6px 12px;
     }
 
+    /* ---- ABOUT ---- */
     .about-section {
         overflow: hidden;
     }
@@ -3710,6 +3780,7 @@ body {
         font-size: 11px;
     }
 
+    /* ---- BLOG ---- */
     .blog-section {
         margin-bottom: 18px;
         overflow: hidden;
@@ -3824,6 +3895,7 @@ body {
         display: none;
     }
 
+    /* ---- COMPLETED PROJECTS ---- */
     .completed-projects {
         padding: 22px 0;
     }
@@ -3895,6 +3967,7 @@ body {
         font-size: 13px;
     }
 
+    /* ---- TESTIMONIALS ---- */
     .testimonial-top {
         padding: 25px 12px 20px;
         flex-direction: column;
@@ -3983,6 +4056,7 @@ body {
         font-size: 13px;
     }
 
+    /* ---- READY ---- */
     .ready-section {
         height: auto;
         padding: 22px 12px;
@@ -4006,6 +4080,7 @@ body {
         margin-top: 12px;
     }
 
+    /* ---- ONGOING PROJECTS ---- */
     .ongoing-container {
         padding: 0 12px;
     }
@@ -4067,6 +4142,7 @@ body {
         font-size: 12px;
     }
 
+    /* ---- DREAM ---- */
     .dream-section {
         overflow: hidden;
     }
@@ -4126,7 +4202,7 @@ body {
         display: none;
     }
 
-    /* FEATURE CARDS - MOBILE FIX */
+    /* ---- FEATURE CARDS ---- */
     .feature-card {
         flex: 0 0 100% !important;
         width: 100% !important;
@@ -4164,11 +4240,13 @@ body {
         line-height: 1.4;
     }
 
+    /* ---- CONTACT ---- */
     .contact-section {
         height: auto;
         min-height: auto;
         flex-direction: column;
         margin: 12px auto;
+        padding: 0 12px;
     }
 
     .left-image {
@@ -4240,6 +4318,7 @@ body {
         font-size: 12px;
     }
 
+    /* ---- FOOTER ---- */
     .footer-container {
         flex-direction: column;
         gap: 18px;

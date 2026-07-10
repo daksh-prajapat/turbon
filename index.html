@@ -1167,7 +1167,7 @@
             counters.forEach(counter => counterObserver.observe(counter));
 
             // ============================================================
-            // COMPLETED PROJECTS SLIDER - WITH RESIZE FIX
+            // COMPLETED PROJECTS SLIDER - FIXED
             // ============================================================
             const projectTrack = document.querySelector(".project-track");
             if (projectTrack) {
@@ -1255,8 +1255,7 @@
                     projectSlider.addEventListener("mouseleave", () => { projectAuto = setInterval(slideProjectNext, 4000); });
                 }
 
-                // WINDOW RESIZE FIX - Auto update without refresh
-                window.addEventListener("resize", () => {
+                window.addEventListener("resize", function() {
                     projectGap = window.innerWidth <= 767 ? 0 : 30;
                     projectCardWidth = allProjectCards[0].offsetWidth;
                     updateProjectSlider(false);
@@ -1316,7 +1315,7 @@
             }
 
             // ============================================================
-            // ONGOING PROJECTS SLIDER - WITH MOBILE FIX
+            // ONGOING PROJECTS SLIDER - FIXED
             // ============================================================
             const ongoingTrack = document.querySelector(".ongoing-track");
             if (ongoingTrack) {
@@ -1397,8 +1396,7 @@
                     ongoingSlider.addEventListener("mouseleave", () => { ongoingAuto = setInterval(slideOngoingNext, 4000); });
                 }
 
-                // WINDOW RESIZE FIX - Mobile par 1 image
-                window.addEventListener("resize", () => {
+                window.addEventListener("resize", function() {
                     ongoingGap = window.innerWidth <= 767 ? 0 : 30;
                     ongoingCardWidth = ongoingCards[0].offsetWidth + ongoingGap;
                     ongoingTrack.style.transition = "none";
@@ -1408,7 +1406,7 @@
             }
 
             // ============================================================
-            // FEATURE PROJECTS SLIDER - WITH MOBILE FIX
+            // FEATURE PROJECTS SLIDER - FIXED
             // ============================================================
             const featureTrack = document.querySelector(".feature-track");
             if (featureTrack) {
@@ -1489,8 +1487,7 @@
                     featureSlider.addEventListener("mouseleave", () => { featureAuto = setInterval(slideFeatureNext, 4000); });
                 }
 
-                // WINDOW RESIZE FIX - Mobile par 1 image
-                window.addEventListener("resize", () => {
+                window.addEventListener("resize", function() {
                     featureGap = window.innerWidth <= 767 ? 0 : 4;
                     featureCardWidth = featureCards[0].offsetWidth + featureGap;
                     featureTrack.style.transition = "none";
