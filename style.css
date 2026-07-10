@@ -408,7 +408,6 @@ body {
 .about-section {
     width: 100%;
     min-height: 500px;
-    /* margin-bottom: 4%; */
     position: relative;
     margin-top: 50px;
 }
@@ -496,7 +495,7 @@ body {
     margin-top: 48px;
 }
 
-.about-container-right-connect a{
+.about-container-right-connect a {
     width: 141px;
     height: 27px;
     gap: 7px;
@@ -889,7 +888,6 @@ body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    /* padding: 50px 0; */
     background: #fff;
     overflow: hidden;
 }
@@ -1334,7 +1332,6 @@ body {
 }
 
 .ongoing-container {
-    /* padding: 15px; */
     width: 100%;
     max-width: 1920px;
     margin: auto;
@@ -1453,16 +1450,13 @@ body {
     width: 100%;
     max-width: 1920px;
     margin-top: 50px;
-    /* padding: 50px 0; */
     overflow: hidden;
     background: #fff;
 }
 
 .dream-container {
-
     width: 100%;
     max-width: 1920px;
-    /* margin: auto; */
 }
 
 .dream-heading {
@@ -2249,6 +2243,10 @@ body {
     right: 15px;
     left: auto;
 }
+
+/* ============================================================
+   TABLET & MOBILE MEDIA QUERIES
+   ============================================================ */
 
 @media (min-width: 1024px) and (max-width: 1399px) {
 
@@ -3081,8 +3079,6 @@ body {
         display: none;
     }
 
-
-
     .completed-projects h2 {
         font-size: 22px;
         margin-bottom: 30px;
@@ -3127,7 +3123,6 @@ body {
     }
 
     .testimonial-top {
-        /* padding: 40px 25px 30px; */
         flex-direction: row;
         gap: 30px;
         align-items: flex-start;
@@ -3236,7 +3231,6 @@ body {
         font-size: 14px;
         margin-top: 15px;
     }
-
 
     .ongoing-container {
         padding: 0 15px;
@@ -3464,6 +3458,9 @@ body {
     }
 }
 
+/* ============================================================
+   MOBILE VIEW - SLIDER FIXES
+   ============================================================ */
 @media (max-width: 767px) {
     .header-top {
         height: auto;
@@ -3543,7 +3540,6 @@ body {
     .hero-section {
         height: 58vh;
         min-height: 300px;
-        /* margin-bottom: 18px; */
     }
 
     .hero-section-text-overlay {
@@ -3551,7 +3547,6 @@ body {
     }
 
     .hero-section-text {
-        /* padding: 25px; */
         left: 12px;
         bottom: 25px;
         max-width: calc(100% - 24px);
@@ -3592,7 +3587,6 @@ body {
     }
 
     .about-section {
-        /* margin-bottom: 18px; */
         overflow: hidden;
     }
 
@@ -3637,7 +3631,6 @@ body {
         height: 600px;
         margin-top: 14px;
         width: 100%;
-        /* margin-left: 8px; */
     }
 
     .about-container-right {
@@ -3652,11 +3645,9 @@ body {
     .about-container-right-img {
         width: 44px;
         height: 42px;
-        /* margin-left: 40%; */
     }
 
     .about-container-right-text {
-        /* padding: 30px; */
         width: 100%;
         height: auto;
         font-size: 12px;
@@ -3669,7 +3660,6 @@ body {
         margin-top: 14px;
         width: auto;
         height: auto;
-        /* margin-left: 30px; */
     }
 
     .about-container-right-bottom {
@@ -3765,14 +3755,6 @@ body {
         padding: 8px 0;
     }
 
-    .counter-box h2 {
-        width: 130px;
-        height: 105px;
-        display: flex;
-        font-weight: 600;
-        font-size: 40px;
-    }
-
     .blog-container-content-box,
     .blog-container-content-box-2,
     .blog-container-content-box-3,
@@ -3863,8 +3845,21 @@ body {
     }
 
     .project-card {
-        flex: 0 0 calc(100vw - 24px);
-        height: 280px;
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        height: 280px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .project-track {
+        gap: 0 !important;
+    }
+
+    .project-slider {
+        overflow: hidden !important;
     }
 
     .project-content {
@@ -3943,11 +3938,10 @@ body {
 
     .testimonial-content {
         flex-direction: column;
-        padding: 10px
+        padding: 10px;
     }
 
     .testimonial-image {
-        /* padding: 10px; */
         width: 100%;
         height: 330px;
         flex-shrink: 0;
@@ -4012,7 +4006,6 @@ body {
         margin-top: 12px;
     }
 
-
     .ongoing-container {
         padding: 0 12px;
     }
@@ -4036,8 +4029,16 @@ body {
     }
 
     .ongoing-card {
-        flex: 0 0 calc(100vw - 24px);
-        height: auto;
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .ongoing-track {
+        gap: 0 !important;
     }
 
     .ongoing-image {
@@ -4083,11 +4084,6 @@ body {
         padding: 0 12px;
     }
 
-    .dream-slider-wrap {
-        width: 100%;
-        overflow: hidden;
-    }
-
     .dream-content {
         display: flex;
         flex-wrap: wrap;
@@ -4130,34 +4126,22 @@ body {
         display: none;
     }
 
-    .dream-nav {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 14px;
-    }
-
-    .dream-nav-btn {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        border: 1px solid #161616;
-        background: #fff;
-        cursor: pointer;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s;
-    }
-
-    .dream-nav-btn:hover {
-        background: #161616;
-        color: #fff;
-    }
-
+    /* FEATURE CARDS - MOBILE FIX */
     .feature-card {
-        flex: 0 0 calc(100vw - 24px);
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .feature-track {
+        gap: 0 !important;
+    }
+
+    .feature-slider {
+        overflow: hidden !important;
     }
 
     .feature-image {
@@ -4451,12 +4435,6 @@ body {
         width: 95%;
         height: 405px;
         min-height: auto;
-    }
-
-    .feature-card {
-        margin: 4px;
-        width: 125%;
-        flex: 0 0 calc(107vw - 44px);
     }
 }
 
