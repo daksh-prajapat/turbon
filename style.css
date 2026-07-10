@@ -496,7 +496,7 @@ body {
     margin-top: 48px;
 }
 
-.about-container-right-connect {
+.about-container-right-connect a{
     width: 141px;
     height: 27px;
     gap: 7px;
@@ -506,6 +506,7 @@ body {
     color: #B18C5B;
     margin-top: 80px;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 .about-container-right-bottom {
@@ -3591,7 +3592,7 @@ body {
     }
 
     .about-section {
-        margin-bottom: 18px;
+        /* margin-bottom: 18px; */
         overflow: hidden;
     }
 
@@ -3668,7 +3669,7 @@ body {
         margin-top: 14px;
         width: auto;
         height: auto;
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
 
     .about-container-right-bottom {

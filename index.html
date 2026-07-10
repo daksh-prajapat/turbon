@@ -56,12 +56,24 @@
                 </div>
                 <div class="header-main-middle" id="navMenu">
                     <ul>
-                        <li><p>About</p><i class="fa-solid fa-angle-down"></i></li>
-                        <li><p>Real Estate</p><i class="fa-solid fa-angle-down"></i></li>
-                        <li><p>Hospitality</p><i class="fa-solid fa-angle-down"></i></li>
-                        <li><p>Media</p><i class="fa-solid fa-angle-down"></i></li>
-                        <li><p>Career</p><i class="fa-solid fa-angle-down"></i></li>
-                        <li><p>Contact Us</p><i class="fa-solid fa-angle-down"></i></li>
+                        <li>
+                            <p>About</p><i class="fa-solid fa-angle-down"></i>
+                        </li>
+                        <li>
+                            <p>Real Estate</p><i class="fa-solid fa-angle-down"></i>
+                        </li>
+                        <li>
+                            <p>Hospitality</p><i class="fa-solid fa-angle-down"></i>
+                        </li>
+                        <li>
+                            <p>Media</p><i class="fa-solid fa-angle-down"></i>
+                        </li>
+                        <li>
+                            <p>Career</p><i class="fa-solid fa-angle-down"></i>
+                        </li>
+                        <li>
+                            <p>Contact Us</p><i class="fa-solid fa-angle-down"></i>
+                        </li>
                     </ul>
                 </div>
 
@@ -172,8 +184,11 @@
                     generations.
                 </div>
                 <div class="about-container-right-connect">
-                    Lets Connect
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="#">
+                        Lets Connect →
+                    </a>
+                    <!-- Lets Connect
+                    <i class="fa-solid fa-arrow-right"></i> -->
                 </div>
                 <div class="about-container-right-bottom">
                     <div class="about-container-right-bottom-top">
@@ -1217,12 +1232,16 @@
                 const projectNextBtn = document.querySelector(".project-next");
                 const projectPrevBtn = document.querySelector(".project-prev");
                 if (projectNextBtn) {
-                    projectNextBtn.addEventListener("click", () => { slideProjectNext();
-                        resetProjectAuto(); });
+                    projectNextBtn.addEventListener("click", () => {
+                        slideProjectNext();
+                        resetProjectAuto();
+                    });
                 }
                 if (projectPrevBtn) {
-                    projectPrevBtn.addEventListener("click", () => { slideProjectPrev();
-                        resetProjectAuto(); });
+                    projectPrevBtn.addEventListener("click", () => {
+                        slideProjectPrev();
+                        resetProjectAuto();
+                    });
                 }
 
                 let projectAuto = setInterval(slideProjectNext, 4000);
@@ -1267,12 +1286,16 @@
             }
 
             nextBtns.forEach(btn => {
-                btn.addEventListener("click", () => { nextTestimonialSlide();
-                    resetTestimonialAuto(); });
+                btn.addEventListener("click", () => {
+                    nextTestimonialSlide();
+                    resetTestimonialAuto();
+                });
             });
             prevBtns.forEach(btn => {
-                btn.addEventListener("click", () => { prevTestimonialSlide();
-                    resetTestimonialAuto(); });
+                btn.addEventListener("click", () => {
+                    prevTestimonialSlide();
+                    resetTestimonialAuto();
+                });
             });
 
             let testimonialAuto = setInterval(nextTestimonialSlide, 5000);
@@ -1345,12 +1368,16 @@
                 const ongoingNextBtn = document.querySelector(".ongoing-next");
                 const ongoingPrevBtn = document.querySelector(".ongoing-prev");
                 if (ongoingNextBtn) {
-                    ongoingNextBtn.addEventListener("click", () => { slideOngoingNext();
-                        resetOngoingAuto(); });
+                    ongoingNextBtn.addEventListener("click", () => {
+                        slideOngoingNext();
+                        resetOngoingAuto();
+                    });
                 }
                 if (ongoingPrevBtn) {
-                    ongoingPrevBtn.addEventListener("click", () => { slideOngoingPrev();
-                        resetOngoingAuto(); });
+                    ongoingPrevBtn.addEventListener("click", () => {
+                        slideOngoingPrev();
+                        resetOngoingAuto();
+                    });
                 }
 
                 let ongoingAuto = setInterval(slideOngoingNext, 4000);
@@ -1430,12 +1457,16 @@
                 const featureNextBtn = document.querySelector(".feature-next");
                 const featurePrevBtn = document.querySelector(".feature-prev");
                 if (featureNextBtn) {
-                    featureNextBtn.addEventListener("click", () => { slideFeatureNext();
-                        resetFeatureAuto(); });
+                    featureNextBtn.addEventListener("click", () => {
+                        slideFeatureNext();
+                        resetFeatureAuto();
+                    });
                 }
                 if (featurePrevBtn) {
-                    featurePrevBtn.addEventListener("click", () => { slideFeaturePrev();
-                        resetFeatureAuto(); });
+                    featurePrevBtn.addEventListener("click", () => {
+                        slideFeaturePrev();
+                        resetFeatureAuto();
+                    });
                 }
 
                 let featureAuto = setInterval(slideFeatureNext, 4000);
