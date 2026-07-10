@@ -199,6 +199,7 @@ body {
 .header-main-middle ul li {
     display: flex;
     align-items: center;
+    cursor: pointer;
     gap: 4px;
 }
 
@@ -227,6 +228,7 @@ body {
 }
 
 .header-main-right button {
+        cursor: pointer;
     width: 146px;
     height: 31px;
     border-radius: 70px;
@@ -363,6 +365,7 @@ body {
 }
 
 .hero-section-text-right button {
+    cursor: pointer;
     width: 175px;
     height: 35px;
     border-radius: 30px;
@@ -1004,6 +1007,7 @@ body {
 }
 
 .details-btn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1040,6 +1044,7 @@ body {
 }
 
 .view-all a {
+    cursor: pointer;
     width: 170px;
     height: 52px;
     border-radius: 50px;
@@ -1307,6 +1312,7 @@ body {
     line-height: 100%;
     width: 201px;
     height: 40px;
+    cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1441,6 +1447,7 @@ body {
     color: #FFFFFF;
     background: #B18C5B;
     transition: .35s;
+    cursor: pointer;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -1919,7 +1926,7 @@ body {
     min-width: 180px;
     padding: 10px 30px;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
     display: flex;
     align-items: center;
