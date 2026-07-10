@@ -1265,22 +1265,23 @@
             counters.forEach(counter => counterObserver.observe(counter));
 
             // ============================================================
-            // COMPLETED PROJECTS SLIDER
+            // COMPLETED PROJECTS SLIDER - ORIGINAL STYLE (Center + 25% cut)
             // ============================================================
             const projectTrack = document.querySelector(".project-track");
-            const projectCards = [...document.querySelectorAll(".project-card")];
+            if (projectTrack) {
+                const projectCards = [...projectTrack.children];
+                const projectGap = 30;
 
-            if (projectTrack && projectCards.length > 0) {
+                // First aur Last card clone karo for infinite loop
                 const firstClone = projectCards[0].cloneNode(true);
                 const lastClone = projectCards[projectCards.length - 1].cloneNode(true);
-
-                projectTrack.appendChild(firstClone);
                 projectTrack.insertBefore(lastClone, projectCards[0]);
+                projectTrack.appendChild(firstClone);
 
                 const allProjectCards = document.querySelectorAll(".project-card");
-                let projectIndex = 1;
+                let projectIndex = 1; // Start from first original card
                 let projectCardWidth = allProjectCards[0].offsetWidth;
-                let projectGap = 30;
+                let projectIsAnimating = false;
 
                 function updateProjectSlider(animation = true) {
                     projectCardWidth = allProjectCards[0].offsetWidth;
@@ -1294,75 +1295,96 @@
                     const slider = document.querySelector(".project-slider");
                     const sliderWidth = slider.offsetWidth;
 
-                    const translate =
-                        projectIndex * (projectCardWidth + projectGap) -
-                        ((sliderWidth - projectCardWidth) / 2);
+                    // Center the card: (sliderWidth - cardWidth) / 2
+                    const translate = projectIndex * (projectCardWidth + projectGap) - ((sliderWidth - projectCardWidth) / 2);
 
                     projectTrack.style.transform = `translateX(-${translate}px)`;
 
+                    // Active class remove karo sabse
                     allProjectCards.forEach(card => card.classList.remove("active"));
-
                     if (allProjectCards[projectIndex]) {
                         allProjectCards[projectIndex].classList.add("active");
                     }
                 }
 
+                // Initial setup without animation
                 updateProjectSlider(false);
 
-                function nextProjectSlide() {
+                function slideProjectNext() {
+                    if (projectIsAnimating) return;
+                    projectIsAnimating = true;
+
                     projectIndex++;
                     updateProjectSlider(true);
+
+                    setTimeout(() => {
+                        projectIsAnimating = false;
+                    }, 800);
                 }
 
-                function prevProjectSlide() {
+                function slideProjectPrev() {
+                    if (projectIsAnimating) return;
+                    projectIsAnimating = true;
+
                     projectIndex--;
                     updateProjectSlider(true);
+
+                    setTimeout(() => {
+                        projectIsAnimating = false;
+                    }, 800);
                 }
 
-                const projectNext = document.querySelector(".project-next");
-                const projectPrev = document.querySelector(".project-prev");
-
-                if (projectNext) {
-                    projectNext.addEventListener("click", () => {
-                        nextProjectSlide();
-                        resetProjectAuto();
-                    });
-                }
-
-                if (projectPrev) {
-                    projectPrev.addEventListener("click", () => {
-                        prevProjectSlide();
-                        resetProjectAuto();
-                    });
-                }
-
-                let projectAuto = setInterval(nextProjectSlide, 3000);
-
-                function resetProjectAuto() {
-                    clearInterval(projectAuto);
-                    projectAuto = setInterval(nextProjectSlide, 3000);
-                }
-
-                projectTrack.addEventListener("mouseenter", () => {
-                    clearInterval(projectAuto);
-                });
-
-                projectTrack.addEventListener("mouseleave", () => {
-                    projectAuto = setInterval(nextProjectSlide, 3000);
-                });
-
+                // Transition end pe clone pe jump karo seamlessly
                 projectTrack.addEventListener("transitionend", () => {
                     if (projectIndex === allProjectCards.length - 1) {
                         projectIndex = 1;
                         updateProjectSlider(false);
                     }
-
                     if (projectIndex === 0) {
                         projectIndex = allProjectCards.length - 2;
                         updateProjectSlider(false);
                     }
                 });
 
+                // Next/Prev buttons
+                const projectNextBtn = document.querySelector(".project-next");
+                const projectPrevBtn = document.querySelector(".project-prev");
+
+                if (projectNextBtn) {
+                    projectNextBtn.addEventListener("click", () => {
+                        slideProjectNext();
+                        resetProjectAuto();
+                    });
+                }
+
+                if (projectPrevBtn) {
+                    projectPrevBtn.addEventListener("click", () => {
+                        slideProjectPrev();
+                        resetProjectAuto();
+                    });
+                }
+
+                // Auto slide
+                let projectAuto = setInterval(slideProjectNext, 4000);
+
+                function resetProjectAuto() {
+                    clearInterval(projectAuto);
+                    projectAuto = setInterval(slideProjectNext, 4000);
+                }
+
+                // Mouse hover pe auto stop
+                const projectSlider = document.querySelector(".project-slider");
+                if (projectSlider) {
+                    projectSlider.addEventListener("mouseenter", () => {
+                        clearInterval(projectAuto);
+                    });
+
+                    projectSlider.addEventListener("mouseleave", () => {
+                        projectAuto = setInterval(slideProjectNext, 4000);
+                    });
+                }
+
+                // Window resize pe update
                 window.addEventListener("resize", () => {
                     updateProjectSlider(false);
                 });
