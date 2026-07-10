@@ -1072,7 +1072,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 16px;
-        padding: 10px 0 0 0;
+    padding: 15px 0 0 0;
 }
 
 .slider-bottom-nav button {
@@ -1194,7 +1194,7 @@ body {
     position: relative;
     z-index: 2;
     box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
-    margin: 20px ;
+    margin: 20px;
 }
 
 .testimonial-track {
@@ -1451,14 +1451,14 @@ body {
 .dream-section {
     width: 100%;
     max-width: 1920px;
-      margin-top: 50px;
+    margin-top: 50px;
     /* padding: 50px 0; */
     overflow: hidden;
     background: #fff;
 }
 
 .dream-container {
-  
+
     width: 100%;
     max-width: 1920px;
     /* margin: auto; */
@@ -3238,7 +3238,7 @@ body {
 
 
     .ongoing-container {
-       padding: 0 15px;
+        padding: 0 15px;
     }
 
     .ongoing-heading h2 {
@@ -3550,7 +3550,7 @@ body {
     }
 
     .hero-section-text {
-                /* padding: 25px; */
+        /* padding: 25px; */
         left: 12px;
         bottom: 25px;
         max-width: calc(100% - 24px);
@@ -3953,7 +3953,7 @@ body {
     }
 
     .testimonial-slider {
-        width:100%;
+        width: 100%;
         height: auto;
         min-height: 148px;
         right: auto;
@@ -4011,7 +4011,7 @@ body {
         margin-top: 12px;
     }
 
-   
+
     .ongoing-container {
         padding: 0 12px;
     }
@@ -4079,7 +4079,7 @@ body {
     }
 
     .dream-container {
-             padding: 0 12px;
+        padding: 0 12px;
     }
 
     .dream-slider-wrap {
