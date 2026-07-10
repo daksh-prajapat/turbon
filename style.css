@@ -408,9 +408,9 @@ body {
 .about-section {
     width: 100%;
     min-height: 500px;
-    margin-bottom: 4%;
+    /* margin-bottom: 4%; */
     position: relative;
-    margin-top: 48px;
+    margin-top: 50px;
 }
 
 .about-container {
@@ -446,7 +446,7 @@ body {
 }
 
 .about-container-left-top h1 {
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 600;
     font-size: 40px;
     line-height: 110%;
@@ -573,9 +573,9 @@ body {
 .blog-section {
     width: 100%;
     min-height: 715px;
-    margin-bottom: 3%;
+    margin-bottom: 50px;
     position: relative;
-    margin-top: 0;
+    margin-top: 50px;
 }
 
 .blog-container {
@@ -610,7 +610,7 @@ body {
     font-weight: 600;
     font-size: 40px;
     line-height: 120%;
-    margin-top: 5px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -888,7 +888,7 @@ body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     background: #fff;
     overflow: hidden;
 }
@@ -906,7 +906,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #C99A56;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -916,7 +916,7 @@ body {
     font-weight: 600;
     line-height: 1.3;
     color: #161616;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -1033,7 +1033,7 @@ body {
 }
 
 .view-all {
-    margin-top: 55px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
@@ -1110,7 +1110,7 @@ body {
 }
 
 .testimonial-top {
-    padding: 70px 5% 60px;
+    padding: 0 5% 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -1125,7 +1125,7 @@ body {
 .testimonial-heading span {
     font-family: 'Poppins', sans-serif;
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     color: #C49A5A;
     font-size: 16px;
     font-weight: 400;
@@ -1327,14 +1327,13 @@ body {
 .ongoing-projects {
     width: 100%;
     max-width: 1920px;
-    margin: auto;
-    padding: 50px 0;
+    margin-top: 50px;
     overflow: hidden;
     background: #fff;
 }
 
 .ongoing-container {
-    padding: 24px;
+    padding: 15px;
     width: 100%;
     max-width: 1920px;
     margin: auto;
@@ -1349,7 +1348,7 @@ body {
     display: block;
     font-size: 16px;
     color: #C49A5A;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
@@ -1453,16 +1452,16 @@ body {
     width: 100%;
     max-width: 1920px;
     margin: auto;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     overflow: hidden;
     background: #fff;
 }
 
 .dream-container {
-    padding: 24px;
+    margin-top: 50px;
     width: 100%;
     max-width: 1920px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .dream-heading {
@@ -1471,6 +1470,7 @@ body {
 }
 
 .dream-heading span {
+    margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     display: block;
     font-size: 16px;
@@ -1572,8 +1572,7 @@ body {
 .feature-projects {
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto;
-    padding: 50px 0;
+    margin: 50px auto;
     background: #fff;
     overflow: hidden;
 }
@@ -1940,7 +1939,7 @@ body {
 .footer {
     width: 100%;
     max-width: 1920px;
-    margin-top: 80px;
+    margin-top: 50px;
     background: #5b3d08;
     color: #fff;
 }
@@ -2970,7 +2969,7 @@ body {
     }
 
     .blog-section {
-        margin-bottom: 25px;
+        margin-bottom: 50px;
         overflow: hidden;
     }
 
@@ -3081,9 +3080,7 @@ body {
         display: none;
     }
 
-    .completed-projects {
-        padding: 35px 0;
-    }
+
 
     .completed-projects h2 {
         font-size: 22px;
@@ -3129,7 +3126,7 @@ body {
     }
 
     .testimonial-top {
-        padding: 40px 25px 30px;
+        /* padding: 40px 25px 30px; */
         flex-direction: row;
         gap: 30px;
         align-items: flex-start;
@@ -3146,6 +3143,10 @@ body {
     .testimonial-heading h2 {
         font-size: 22px;
         line-height: 1.3;
+    }
+
+    .testimonials-section {
+        margin-top: 50px;
     }
 
     .testimonial-heading h2 br {
@@ -3235,9 +3236,6 @@ body {
         margin-top: 15px;
     }
 
-    .ongoing-projects {
-        padding: 25px 0;
-    }
 
     .ongoing-container {
         padding: 15px;
