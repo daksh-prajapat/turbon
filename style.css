@@ -1072,7 +1072,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding: 20px 0 10px 0;
+        padding: 10px 0 10px 0;
 }
 
 .slider-bottom-nav button {
@@ -1333,7 +1333,7 @@ body {
 }
 
 .ongoing-container {
-    padding: 15px;
+    /* padding: 15px; */
     width: 100%;
     max-width: 1920px;
     margin: auto;
@@ -1451,14 +1451,14 @@ body {
 .dream-section {
     width: 100%;
     max-width: 1920px;
-    margin: auto;
+      margin-top: 50px;
     /* padding: 50px 0; */
     overflow: hidden;
     background: #fff;
 }
 
 .dream-container {
-    margin-top: 50px;
+  
     width: 100%;
     max-width: 1920px;
     /* margin: auto; */
@@ -3613,7 +3613,7 @@ body {
     }
 
     .about-container-left-top span {
-        font-size: 13px;
+        font-size: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -3664,7 +3664,7 @@ body {
     }
 
     .about-container-right-connect {
-        font-size: 13px;
+        font-size: 14px;
         margin-top: 14px;
         width: auto;
         height: auto;
@@ -3741,7 +3741,7 @@ body {
 
     .blog-container-top span {
         justify-content: center;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .blog-container-top h1 {
@@ -3857,7 +3857,7 @@ body {
     }
 
     .sub-heading {
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: 6px;
     }
 
@@ -3876,11 +3876,11 @@ body {
     }
 
     .project-left h3 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .project-left p {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .details-btn {
@@ -3910,7 +3910,7 @@ body {
     }
 
     .testimonial-heading span {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .testimonial-heading h2 {
@@ -3947,7 +3947,7 @@ body {
     .testimonial-image {
         padding: 10px;
         width: 100%;
-        height: 485px;
+        height: 330px;
         flex-shrink: 0;
     }
 
@@ -3963,7 +3963,7 @@ body {
     }
 
     .review {
-        font-size: 13px;
+        font-size: 16px;
         max-width: 100%;
         line-height: 1.6;
     }
@@ -3977,7 +3977,7 @@ body {
     }
 
     .testimonial-bottom h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .testimonial-buttons button {
@@ -3997,7 +3997,7 @@ body {
     }
 
     .ready-container p {
-        font-size: 11px;
+        font-size: 14px;
         max-width: 100%;
         line-height: 18px;
     }
@@ -4009,10 +4009,7 @@ body {
         margin-top: 12px;
     }
 
-    .ongoing-projects {
-        padding: 18px 0;
-    }
-
+   
     .ongoing-container {
         padding: 12px;
     }
@@ -4027,7 +4024,7 @@ body {
     }
 
     .ongoing-heading span {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .ongoing-slider {
@@ -4050,12 +4047,12 @@ body {
     }
 
     .ongoing-content h3 {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.3;
     }
 
     .ongoing-content p {
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 10px;
         line-height: 20px;
     }
@@ -4076,7 +4073,7 @@ body {
     }
 
     .dream-heading span {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .dream-container {
@@ -4176,7 +4173,7 @@ body {
     }
 
     .feature-content h3 {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.4;
     }
 
@@ -4298,13 +4295,13 @@ body {
     }
 
     .footer-text {
-        font-size: 11px;
+        font-size: 13px;
         line-height: 22px;
     }
 
     .office p,
     .info-box span {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .divider {
@@ -4332,7 +4329,7 @@ body {
     }
 
     .hero-section-text-left p {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 5px;
     }
 
@@ -4343,15 +4340,15 @@ body {
     }
 
     .about-container-left-top h1 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .blog-container-top h1 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .completed-projects h2 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .testimonial-heading h2 {
@@ -4363,11 +4360,11 @@ body {
     }
 
     .ongoing-heading h2 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .dream-heading h2 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .footer-links {
@@ -4683,7 +4680,7 @@ body {
     }
 
     .counter-box-1 p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .counter-box-2 h2 {
@@ -4696,7 +4693,7 @@ body {
     }
 
     .counter-box-2 p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .counter-box-3 h2 {
@@ -4709,7 +4706,7 @@ body {
     }
 
     .counter-box-3 p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .counter-box-4 h2 {
@@ -4718,11 +4715,11 @@ body {
     }
 
     .small-line-4 {
-        margin-left: 46px;
+        margin-left: 60px;
     }
 
     .counter-box-4 p {
-        font-size: 12px;
+        font-size: 14px;
         margin-right: 1px;
     }
 }
