@@ -432,7 +432,7 @@ body {
     width: 100%;
     max-width: 1235px;
     height: auto;
-    min-height: 852px;
+    min-height: 790px;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -2668,7 +2668,7 @@ body {
     .blog-container-content-box-4,
     .blog-container-content-box-5,
     .blog-container-content-box-6 {
-        height: 280px;
+        height: 230px;
         padding: 15px 10px;
     }
 
