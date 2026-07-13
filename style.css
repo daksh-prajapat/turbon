@@ -540,13 +540,13 @@ body {
 /* Top Row */
 .about-container-right-bottom-top {
     gap: 5%;
-    padding: 20px 35px 10px;
+    padding: 20px 64px 10px;
     display: flex;
 }
 
 .about-container-right-bottom-top-box {
     width: 215px;
-    height: 100px;
+    height: 123px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -577,7 +577,7 @@ body {
 /* Bottom Row */
 .about-container-right-bottom-b {
     gap: 1%;
-    padding: 25px 35px 0;
+    padding: 25px 70px 0;
     display: flex;
 }
 
@@ -600,7 +600,7 @@ body {
 }
 
 /* ============================================================
-   MOBILE COUNTER SECTION - UPDATED
+   MOBILE COUNTER SECTION
    ============================================================ */
 .mobile-counter-section {
     display: none;
@@ -2019,7 +2019,7 @@ body {
     min-width: 180px;
     padding: 10px 30px;
     border-radius: 30px;
-    font-size: 17px;
+    font-size: 14px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -2420,7 +2420,7 @@ body {
 }
 
 /* ============================================================
-   RESPONSIVE: 1024px - 1399px - Mobile Counter HIDDEN
+   RESPONSIVE: 1024px - 1399px
    ============================================================ */
 @media (min-width: 1024px) and (max-width: 1399px) {
 
@@ -2431,7 +2431,7 @@ body {
 
     .header-top-left {
         left: auto;
-             right: 174px;
+        right: 174px;
         gap: 38px;
     }
 
@@ -2542,8 +2542,6 @@ body {
         position: absolute;
         top: 490px;
         width: calc(100% + 455px);
-        /* right: 10%;
-        padding: 15px 20px;
     }
 
     .about-container-right-bottom-top {
@@ -2580,33 +2578,72 @@ body {
     }
 
     .about-container-right-bottom-b {
-            gap: 1%;
+        gap: 1%;
         padding: 16px 17px 0;
         display: flex;
     }
 
     .about-container-right-bottom-b-box {
-       width: 262px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #B18C5B;
-    opacity: .7;
+        width: 262px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #B18C5B;
+        opacity: .7;
     }
 
     .about-container-right-bottom-b-box p {
         margin: 0;
-        /* font-size: 15px; */
     }
 
     /* Mobile Counter - HIDDEN in 1024-1399px */
     .mobile-counter-section {
         display: none !important;
+    }
+
+    /* ============================================================
+       CONTACT SECTION FIX - 1024px to 1399px
+       ============================================================ */
+    .contact-section {
+        flex-direction: row !important;
+        align-items: stretch !important;
+        min-height: 600px !important;
+    }
+
+    .left-image {
+        width: 48% !important;
+        height: auto !important;
+        min-height: 600px !important;
+        overflow: hidden !important;
+        flex-shrink: 0 !important;
+    }
+
+    .left-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
+    }
+
+    .right-side {
+        width: 52% !important;
+        padding: 40px 50px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .contact-box {
+        height: auto !important;
+        width: 100% !important;
+        max-width: 580px !important;
+        padding: 40px 35px !important;
     }
 
     .blog-container-top span {
@@ -2800,7 +2837,7 @@ body {
 }
 
 /* ============================================================
-   RESPONSIVE: 768px - 1023px (TABLET) - Mobile Counter SHOWN
+   RESPONSIVE: 768px - 1023px (TABLET)
    ============================================================ */
 @media (min-width: 768px) and (max-width: 1023px) {
     .header-top {
@@ -3062,38 +3099,31 @@ body {
         padding: 20px 0;
     }
 
-    .blog-section {
-        margin-bottom: 50px;
-        overflow: hidden;
-    }
-
-    .blog-container {
-        width: 100%;
-        padding: 0 20px;
-        flex-direction: column;
-        height: auto;
-    }
-
+    /* ============================================================
+       BLOG SECTION FIX - Tablet (768px - 1023px)
+       ============================================================ */
     .blog-container-top {
-        position: static;
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-        left: auto;
+        position: static !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
     }
 
     .blog-container-top span {
-        position: absolute;
-        justify-content: center;
-        font-size: 14px;
-        left: 50%;
+        position: static !important;
+        justify-content: center !important;
+        font-size: 14px !important;
+        left: auto !important;
+        text-align: center !important;
+        display: block !important;
     }
 
     .blog-container-top h1 {
-        position: absolute;
-        font-size: 20px;
-        line-height: 1.3;
-        left: 9%;
+        position: static !important;
+        font-size: 20px !important;
+        line-height: 1.3 !important;
+        left: auto !important;
+        text-align: center !important;
     }
 
     .blog-container-top h1 br {
@@ -3104,7 +3134,7 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 16px;
         padding: 10px 0;
-        margin-top: 50px;
+        margin-top: 0px !important;
     }
 
     .blog-container-content-box,
@@ -3542,7 +3572,7 @@ body {
 }
 
 /* ============================================================
-   RESPONSIVE: MOBILE (max-width: 767px) - Mobile Counter SHOWN
+   RESPONSIVE: MOBILE (max-width: 767px)
    ============================================================ */
 @media (max-width: 767px) {
     .header-top {

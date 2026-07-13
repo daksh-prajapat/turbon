@@ -255,9 +255,6 @@
         </div>
     </section>
 
-    <!-- ============================================================ -->
-    <!-- OUR BELIEFS SECTION - FIXED CENTER ALIGNMENT -->
-    <!-- ============================================================ -->
     <section class="blog-section">
         <div class="blog-container">
             <div class="blog-container-top">
@@ -265,7 +262,6 @@
                 <h1>Where Every Project Tells a Story of <br> Excellence and Unwavering Trust</h1>
             </div>
             <div class="blog-container-content">
-                <!-- Row 1 -->
                 <div class="blog-container-content-box">
                     <div class="blog-container-content-box-img">
                         <img src="./blog-1.png" alt="">
@@ -292,7 +288,6 @@
                     <span>Transparency and honesty are at the <br> core of our business, fostering long <br> -term
                         relationships built on trust.</span>
                 </div>
-                <!-- Row 2 -->
                 <div class="blog-container-content-box-4">
                     <div class="blog-container-content-box-4-img">
                         <img src="./blog-4.png" alt="">
@@ -1148,12 +1143,9 @@
             }
             setInterval(nextHeroSlide, 3000);
 
-            // ============================================================
-            // COUNTER ANIMATION - SIMPLE VERSION (WORKING)
-            // ============================================================
+            // COUNTER
             const counters = document.querySelectorAll(".counter");
             const observerOptions = { threshold: 0.5 };
-
             const counterObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting && !entry.target.dataset.counted) {
@@ -1173,11 +1165,10 @@
                     }
                 });
             }, observerOptions);
-
             counters.forEach(counter => counterObserver.observe(counter));
 
             // ============================================================
-            // COMPLETED PROJECTS SLIDER - FIXED
+            // COMPLETED PROJECTS SLIDER - INFINITE LOOP FIXED
             // ============================================================
             const projectTrack = document.querySelector(".project-track");
             if (projectTrack) {
@@ -1226,7 +1217,8 @@
                     setTimeout(() => { projectIsAnimating = false; }, 800);
                 }
 
-                projectTrack.addEventListener("transitionend", () => {
+                projectTrack.addEventListener("transitionend", function() {
+                    projectIsAnimating = false;
                     if (projectIndex === allProjectCards.length - 1) {
                         projectIndex = 1;
                         updateProjectSlider(false);
@@ -1240,13 +1232,13 @@
                 const projectNextBtn = document.querySelector(".project-next");
                 const projectPrevBtn = document.querySelector(".project-prev");
                 if (projectNextBtn) {
-                    projectNextBtn.addEventListener("click", () => {
+                    projectNextBtn.addEventListener("click", function() {
                         slideProjectNext();
                         resetProjectAuto();
                     });
                 }
                 if (projectPrevBtn) {
-                    projectPrevBtn.addEventListener("click", () => {
+                    projectPrevBtn.addEventListener("click", function() {
                         slideProjectPrev();
                         resetProjectAuto();
                     });
@@ -1261,8 +1253,8 @@
 
                 const projectSlider = document.querySelector(".project-slider");
                 if (projectSlider) {
-                    projectSlider.addEventListener("mouseenter", () => { clearInterval(projectAuto); });
-                    projectSlider.addEventListener("mouseleave", () => { projectAuto = setInterval(slideProjectNext, 4000); });
+                    projectSlider.addEventListener("mouseenter", function() { clearInterval(projectAuto); });
+                    projectSlider.addEventListener("mouseleave", function() { projectAuto = setInterval(slideProjectNext, 4000); });
                 }
 
                 window.addEventListener("resize", function() {
@@ -1298,14 +1290,14 @@
                 updateTestimonialSlider();
             }
 
-            nextBtns.forEach(btn => {
-                btn.addEventListener("click", () => {
+            nextBtns.forEach(function(btn) {
+                btn.addEventListener("click", function() {
                     nextTestimonialSlide();
                     resetTestimonialAuto();
                 });
             });
-            prevBtns.forEach(btn => {
-                btn.addEventListener("click", () => {
+            prevBtns.forEach(function(btn) {
+                btn.addEventListener("click", function() {
                     prevTestimonialSlide();
                     resetTestimonialAuto();
                 });
@@ -1320,74 +1312,63 @@
 
             const testimonialSlider = document.querySelector(".testimonial-slider");
             if (testimonialSlider) {
-                testimonialSlider.addEventListener("mouseenter", () => { clearInterval(testimonialAuto); });
-                testimonialSlider.addEventListener("mouseleave", () => { testimonialAuto = setInterval(nextTestimonialSlide, 5000); });
+                testimonialSlider.addEventListener("mouseenter", function() { clearInterval(testimonialAuto); });
+                testimonialSlider.addEventListener("mouseleave", function() { testimonialAuto = setInterval(nextTestimonialSlide, 5000); });
             }
 
             // ============================================================
-            // ONGOING PROJECTS SLIDER - FIXED
+            // ONGOING PROJECTS SLIDER - INFINITE LOOP FIXED
             // ============================================================
             const ongoingTrack = document.querySelector(".ongoing-track");
             if (ongoingTrack) {
                 const ongoingCards = [...ongoingTrack.children];
-                ongoingCards.forEach(card => { ongoingTrack.appendChild(card.cloneNode(true)); });
+                const totalOngoing = ongoingCards.length;
+                ongoingCards.forEach(function(card) { ongoingTrack.appendChild(card.cloneNode(true)); });
                 let ongoingGap = window.innerWidth <= 767 ? 0 : 30;
                 let ongoingCardWidth = ongoingCards[0].offsetWidth + ongoingGap;
                 let ongoingIndex = 0;
                 let ongoingIsAnimating = false;
-                ongoingTrack.style.transition = "transform .8s ease";
 
                 function slideOngoingNext() {
                     if (ongoingIsAnimating) return;
                     ongoingIsAnimating = true;
                     ongoingIndex++;
+                    ongoingTrack.style.transition = "transform .8s ease";
                     ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
-                    if (ongoingIndex >= ongoingCards.length) {
-                        setTimeout(() => {
-                            ongoingTrack.style.transition = "none";
-                            ongoingIndex = 0;
-                            ongoingTrack.style.transform = "translateX(0px)";
-                            requestAnimationFrame(() => {
-                                requestAnimationFrame(() => {
-                                    ongoingTrack.style.transition = "transform .8s ease";
-                                });
-                            });
-                        }, 800);
-                    }
-                    setTimeout(() => { ongoingIsAnimating = false; }, 800);
                 }
 
                 function slideOngoingPrev() {
                     if (ongoingIsAnimating) return;
                     ongoingIsAnimating = true;
                     ongoingIndex--;
+                    ongoingTrack.style.transition = "transform .8s ease";
+                    ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
+                }
+
+                ongoingTrack.addEventListener("transitionend", function() {
+                    ongoingIsAnimating = false;
+                    if (ongoingIndex >= totalOngoing) {
+                        ongoingIndex = 0;
+                        ongoingTrack.style.transition = "none";
+                        ongoingTrack.style.transform = `translateX(0px)`;
+                    }
                     if (ongoingIndex < 0) {
-                        ongoingIndex = ongoingCards.length - 1;
+                        ongoingIndex = totalOngoing - 1;
                         ongoingTrack.style.transition = "none";
                         ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
-                        requestAnimationFrame(() => {
-                            requestAnimationFrame(() => {
-                                ongoingTrack.style.transition = "transform .8s ease";
-                                ongoingIndex = ongoingCards.length - 2;
-                                slideOngoingPrev();
-                            });
-                        });
-                        return;
                     }
-                    ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
-                    setTimeout(() => { ongoingIsAnimating = false; }, 800);
-                }
+                });
 
                 const ongoingNextBtn = document.querySelector(".ongoing-next");
                 const ongoingPrevBtn = document.querySelector(".ongoing-prev");
                 if (ongoingNextBtn) {
-                    ongoingNextBtn.addEventListener("click", () => {
+                    ongoingNextBtn.addEventListener("click", function() {
                         slideOngoingNext();
                         resetOngoingAuto();
                     });
                 }
                 if (ongoingPrevBtn) {
-                    ongoingPrevBtn.addEventListener("click", () => {
+                    ongoingPrevBtn.addEventListener("click", function() {
                         slideOngoingPrev();
                         resetOngoingAuto();
                     });
@@ -1402,8 +1383,8 @@
 
                 const ongoingSlider = document.querySelector(".ongoing-slider");
                 if (ongoingSlider) {
-                    ongoingSlider.addEventListener("mouseenter", () => { clearInterval(ongoingAuto); });
-                    ongoingSlider.addEventListener("mouseleave", () => { ongoingAuto = setInterval(slideOngoingNext, 4000); });
+                    ongoingSlider.addEventListener("mouseenter", function() { clearInterval(ongoingAuto); });
+                    ongoingSlider.addEventListener("mouseleave", function() { ongoingAuto = setInterval(slideOngoingNext, 4000); });
                 }
 
                 window.addEventListener("resize", function() {
@@ -1411,74 +1392,62 @@
                     ongoingCardWidth = ongoingCards[0].offsetWidth + ongoingGap;
                     ongoingTrack.style.transition = "none";
                     ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
-                    requestAnimationFrame(() => { ongoingTrack.style.transition = "transform .8s ease"; });
                 });
             }
 
             // ============================================================
-            // FEATURE PROJECTS SLIDER - FIXED
+            // FEATURE PROJECTS SLIDER - INFINITE LOOP FIXED
             // ============================================================
             const featureTrack = document.querySelector(".feature-track");
             if (featureTrack) {
                 const featureCards = [...featureTrack.children];
-                featureCards.forEach(card => { featureTrack.appendChild(card.cloneNode(true)); });
+                const totalFeature = featureCards.length;
+                featureCards.forEach(function(card) { featureTrack.appendChild(card.cloneNode(true)); });
                 let featureGap = window.innerWidth <= 767 ? 0 : 4;
                 let featureCardWidth = featureCards[0].offsetWidth + featureGap;
                 let featureIndex = 0;
                 let featureIsAnimating = false;
-                featureTrack.style.transition = "transform .8s ease";
 
                 function slideFeatureNext() {
                     if (featureIsAnimating) return;
                     featureIsAnimating = true;
                     featureIndex++;
+                    featureTrack.style.transition = "transform .8s ease";
                     featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
-                    if (featureIndex >= featureCards.length) {
-                        setTimeout(() => {
-                            featureTrack.style.transition = "none";
-                            featureIndex = 0;
-                            featureTrack.style.transform = "translateX(0px)";
-                            requestAnimationFrame(() => {
-                                requestAnimationFrame(() => {
-                                    featureTrack.style.transition = "transform .8s ease";
-                                });
-                            });
-                        }, 800);
-                    }
-                    setTimeout(() => { featureIsAnimating = false; }, 800);
                 }
 
                 function slideFeaturePrev() {
                     if (featureIsAnimating) return;
                     featureIsAnimating = true;
                     featureIndex--;
+                    featureTrack.style.transition = "transform .8s ease";
+                    featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+                }
+
+                featureTrack.addEventListener("transitionend", function() {
+                    featureIsAnimating = false;
+                    if (featureIndex >= totalFeature) {
+                        featureIndex = 0;
+                        featureTrack.style.transition = "none";
+                        featureTrack.style.transform = `translateX(0px)`;
+                    }
                     if (featureIndex < 0) {
-                        featureIndex = featureCards.length - 1;
+                        featureIndex = totalFeature - 1;
                         featureTrack.style.transition = "none";
                         featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
-                        requestAnimationFrame(() => {
-                            requestAnimationFrame(() => {
-                                featureTrack.style.transition = "transform .8s ease";
-                                featureIndex = featureCards.length - 2;
-                                slideFeaturePrev();
-                            });
-                        });
-                        return;
                     }
-                    featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
-                    setTimeout(() => { featureIsAnimating = false; }, 800);
-                }
+                });
 
                 const featureNextBtn = document.querySelector(".feature-next");
                 const featurePrevBtn = document.querySelector(".feature-prev");
                 if (featureNextBtn) {
-                    featureNextBtn.addEventListener("click", () => {
+                    featureNextBtn.addEventListener("click", function() {
                         slideFeatureNext();
                         resetFeatureAuto();
                     });
                 }
                 if (featurePrevBtn) {
-                    featurePrevBtn.addEventListener("click", () => {
+                    featurePrevBtn.addEventListener("click", function() {
                         slideFeaturePrev();
                         resetFeatureAuto();
                     });
@@ -1493,8 +1462,8 @@
 
                 const featureSlider = document.querySelector(".feature-slider");
                 if (featureSlider) {
-                    featureSlider.addEventListener("mouseenter", () => { clearInterval(featureAuto); });
-                    featureSlider.addEventListener("mouseleave", () => { featureAuto = setInterval(slideFeatureNext, 4000); });
+                    featureSlider.addEventListener("mouseenter", function() { clearInterval(featureAuto); });
+                    featureSlider.addEventListener("mouseleave", function() { featureAuto = setInterval(slideFeatureNext, 4000); });
                 }
 
                 window.addEventListener("resize", function() {
@@ -1502,13 +1471,10 @@
                     featureCardWidth = featureCards[0].offsetWidth + featureGap;
                     featureTrack.style.transition = "none";
                     featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
-                    requestAnimationFrame(() => { featureTrack.style.transition = "transform .8s ease"; });
                 });
             }
 
-            // ============================================================
             // NEWS TICKER
-            // ============================================================
             const tickerTrack = document.querySelector(".ticker-track");
             if (tickerTrack) {
                 tickerTrack.innerHTML += tickerTrack.innerHTML;
