@@ -37,8 +37,8 @@ body {
     width: 709px;
     height: 18px;
     position: absolute;
-    left: 309px;
-    gap: 86px;
+    left: 392px;
+    gap: 70px;
     top: 3px;
     display: flex;
     margin: 0 auto;
@@ -211,7 +211,7 @@ body {
 
 .header-main-middle ul li p {
     font-weight: 400;
-    font-size: 19px;
+    font-size: 14px;
     line-height: 100%;
     color: #000000;
     font-family: 'Poppins', sans-serif;
@@ -2624,7 +2624,7 @@ body {
     }
 
     .left-image img {
-        width: 100% !important;
+        width: 133% !important;
         height: 100% !important;
         object-fit: cover !important;
         object-position: center !important;
@@ -2633,7 +2633,7 @@ body {
 
     .right-side {
         width: 52% !important;
-        padding: 40px 50px !important;
+        padding: 40px 20px !important;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
@@ -4493,7 +4493,7 @@ body {
     }
 
     .header-top-left {
-        left: 325px;
+        left: 345px;
     }
 
     .header-main-middle {

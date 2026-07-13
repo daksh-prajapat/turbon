@@ -1182,11 +1182,12 @@
                 let projectIndex = 1;
                 let projectCardWidth = allProjectCards[0].offsetWidth;
                 let projectIsAnimating = false;
+                let projectTimeout = null;
 
                 function updateProjectSlider(animation = true) {
                     projectCardWidth = allProjectCards[0].offsetWidth;
                     if (animation) {
-                        projectTrack.style.transition = "transform .8s ease";
+                        projectTrack.style.transition = "transform .6s ease";
                     } else {
                         projectTrack.style.transition = "none";
                     }
@@ -1206,7 +1207,10 @@
                     projectIsAnimating = true;
                     projectIndex++;
                     updateProjectSlider(true);
-                    setTimeout(() => { projectIsAnimating = false; }, 800);
+                    clearTimeout(projectTimeout);
+                    projectTimeout = setTimeout(function() {
+                        projectIsAnimating = false;
+                    }, 700);
                 }
 
                 function slideProjectPrev() {
@@ -1214,31 +1218,37 @@
                     projectIsAnimating = true;
                     projectIndex--;
                     updateProjectSlider(true);
-                    setTimeout(() => { projectIsAnimating = false; }, 800);
+                    clearTimeout(projectTimeout);
+                    projectTimeout = setTimeout(function() {
+                        projectIsAnimating = false;
+                    }, 700);
                 }
 
-                projectTrack.addEventListener("transitionend", function() {
-                    projectIsAnimating = false;
-                    if (projectIndex === allProjectCards.length - 1) {
-                        projectIndex = 1;
-                        updateProjectSlider(false);
-                    }
-                    if (projectIndex === 0) {
-                        projectIndex = allProjectCards.length - 2;
-                        updateProjectSlider(false);
+                projectTrack.addEventListener("transitionend", function(e) {
+                    if (e.target === projectTrack) {
+                        if (projectIndex === allProjectCards.length - 1) {
+                            projectIndex = 1;
+                            updateProjectSlider(false);
+                        }
+                        if (projectIndex === 0) {
+                            projectIndex = allProjectCards.length - 2;
+                            updateProjectSlider(false);
+                        }
                     }
                 });
 
                 const projectNextBtn = document.querySelector(".project-next");
                 const projectPrevBtn = document.querySelector(".project-prev");
                 if (projectNextBtn) {
-                    projectNextBtn.addEventListener("click", function() {
+                    projectNextBtn.addEventListener("click", function(e) {
+                        e.stopPropagation();
                         slideProjectNext();
                         resetProjectAuto();
                     });
                 }
                 if (projectPrevBtn) {
-                    projectPrevBtn.addEventListener("click", function() {
+                    projectPrevBtn.addEventListener("click", function(e) {
+                        e.stopPropagation();
                         slideProjectPrev();
                         resetProjectAuto();
                     });
@@ -1273,31 +1283,48 @@
             const prevBtns = document.querySelectorAll(".prev-btn");
             let testimonialCurrent = 0;
             const testimonialTotal = testimonialSlides.length;
+            let testimonialIsAnimating = false;
+            let testimonialTimeout = null;
 
             function updateTestimonialSlider() {
+                testimonialTrack.style.transition = "transform .6s ease";
                 testimonialTrack.style.transform = `translateX(-${testimonialCurrent * 100}%)`;
             }
 
             function nextTestimonialSlide() {
+                if (testimonialIsAnimating) return;
+                testimonialIsAnimating = true;
                 testimonialCurrent++;
                 if (testimonialCurrent >= testimonialTotal) { testimonialCurrent = 0; }
                 updateTestimonialSlider();
+                clearTimeout(testimonialTimeout);
+                testimonialTimeout = setTimeout(function() {
+                    testimonialIsAnimating = false;
+                }, 700);
             }
 
             function prevTestimonialSlide() {
+                if (testimonialIsAnimating) return;
+                testimonialIsAnimating = true;
                 testimonialCurrent--;
                 if (testimonialCurrent < 0) { testimonialCurrent = testimonialTotal - 1; }
                 updateTestimonialSlider();
+                clearTimeout(testimonialTimeout);
+                testimonialTimeout = setTimeout(function() {
+                    testimonialIsAnimating = false;
+                }, 700);
             }
 
             nextBtns.forEach(function(btn) {
-                btn.addEventListener("click", function() {
+                btn.addEventListener("click", function(e) {
+                    e.stopPropagation();
                     nextTestimonialSlide();
                     resetTestimonialAuto();
                 });
             });
             prevBtns.forEach(function(btn) {
-                btn.addEventListener("click", function() {
+                btn.addEventListener("click", function(e) {
+                    e.stopPropagation();
                     prevTestimonialSlide();
                     resetTestimonialAuto();
                 });
@@ -1328,47 +1355,59 @@
                 let ongoingCardWidth = ongoingCards[0].offsetWidth + ongoingGap;
                 let ongoingIndex = 0;
                 let ongoingIsAnimating = false;
+                let ongoingTimeout = null;
 
                 function slideOngoingNext() {
                     if (ongoingIsAnimating) return;
                     ongoingIsAnimating = true;
                     ongoingIndex++;
-                    ongoingTrack.style.transition = "transform .8s ease";
+                    ongoingTrack.style.transition = "transform .6s ease";
                     ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
+                    clearTimeout(ongoingTimeout);
+                    ongoingTimeout = setTimeout(function() {
+                        ongoingIsAnimating = false;
+                    }, 700);
                 }
 
                 function slideOngoingPrev() {
                     if (ongoingIsAnimating) return;
                     ongoingIsAnimating = true;
                     ongoingIndex--;
-                    ongoingTrack.style.transition = "transform .8s ease";
+                    ongoingTrack.style.transition = "transform .6s ease";
                     ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
+                    clearTimeout(ongoingTimeout);
+                    ongoingTimeout = setTimeout(function() {
+                        ongoingIsAnimating = false;
+                    }, 700);
                 }
 
-                ongoingTrack.addEventListener("transitionend", function() {
-                    ongoingIsAnimating = false;
-                    if (ongoingIndex >= totalOngoing) {
-                        ongoingIndex = 0;
-                        ongoingTrack.style.transition = "none";
-                        ongoingTrack.style.transform = `translateX(0px)`;
-                    }
-                    if (ongoingIndex < 0) {
-                        ongoingIndex = totalOngoing - 1;
-                        ongoingTrack.style.transition = "none";
-                        ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
+                ongoingTrack.addEventListener("transitionend", function(e) {
+                    if (e.target === ongoingTrack) {
+                        if (ongoingIndex >= totalOngoing) {
+                            ongoingIndex = 0;
+                            ongoingTrack.style.transition = "none";
+                            ongoingTrack.style.transform = `translateX(0px)`;
+                        }
+                        if (ongoingIndex < 0) {
+                            ongoingIndex = totalOngoing - 1;
+                            ongoingTrack.style.transition = "none";
+                            ongoingTrack.style.transform = `translateX(-${ongoingIndex * ongoingCardWidth}px)`;
+                        }
                     }
                 });
 
                 const ongoingNextBtn = document.querySelector(".ongoing-next");
                 const ongoingPrevBtn = document.querySelector(".ongoing-prev");
                 if (ongoingNextBtn) {
-                    ongoingNextBtn.addEventListener("click", function() {
+                    ongoingNextBtn.addEventListener("click", function(e) {
+                        e.stopPropagation();
                         slideOngoingNext();
                         resetOngoingAuto();
                     });
                 }
                 if (ongoingPrevBtn) {
-                    ongoingPrevBtn.addEventListener("click", function() {
+                    ongoingPrevBtn.addEventListener("click", function(e) {
+                        e.stopPropagation();
                         slideOngoingPrev();
                         resetOngoingAuto();
                     });
@@ -1407,47 +1446,59 @@
                 let featureCardWidth = featureCards[0].offsetWidth + featureGap;
                 let featureIndex = 0;
                 let featureIsAnimating = false;
+                let featureTimeout = null;
 
                 function slideFeatureNext() {
                     if (featureIsAnimating) return;
                     featureIsAnimating = true;
                     featureIndex++;
-                    featureTrack.style.transition = "transform .8s ease";
+                    featureTrack.style.transition = "transform .6s ease";
                     featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+                    clearTimeout(featureTimeout);
+                    featureTimeout = setTimeout(function() {
+                        featureIsAnimating = false;
+                    }, 700);
                 }
 
                 function slideFeaturePrev() {
                     if (featureIsAnimating) return;
                     featureIsAnimating = true;
                     featureIndex--;
-                    featureTrack.style.transition = "transform .8s ease";
+                    featureTrack.style.transition = "transform .6s ease";
                     featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+                    clearTimeout(featureTimeout);
+                    featureTimeout = setTimeout(function() {
+                        featureIsAnimating = false;
+                    }, 700);
                 }
 
-                featureTrack.addEventListener("transitionend", function() {
-                    featureIsAnimating = false;
-                    if (featureIndex >= totalFeature) {
-                        featureIndex = 0;
-                        featureTrack.style.transition = "none";
-                        featureTrack.style.transform = `translateX(0px)`;
-                    }
-                    if (featureIndex < 0) {
-                        featureIndex = totalFeature - 1;
-                        featureTrack.style.transition = "none";
-                        featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+                featureTrack.addEventListener("transitionend", function(e) {
+                    if (e.target === featureTrack) {
+                        if (featureIndex >= totalFeature) {
+                            featureIndex = 0;
+                            featureTrack.style.transition = "none";
+                            featureTrack.style.transform = `translateX(0px)`;
+                        }
+                        if (featureIndex < 0) {
+                            featureIndex = totalFeature - 1;
+                            featureTrack.style.transition = "none";
+                            featureTrack.style.transform = `translateX(-${featureIndex * featureCardWidth}px)`;
+                        }
                     }
                 });
 
                 const featureNextBtn = document.querySelector(".feature-next");
                 const featurePrevBtn = document.querySelector(".feature-prev");
                 if (featureNextBtn) {
-                    featureNextBtn.addEventListener("click", function() {
+                    featureNextBtn.addEventListener("click", function(e) {
+                        e.stopPropagation();
                         slideFeatureNext();
                         resetFeatureAuto();
                     });
                 }
                 if (featurePrevBtn) {
-                    featurePrevBtn.addEventListener("click", function() {
+                    featurePrevBtn.addEventListener("click", function(e) {
+                        e.stopPropagation();
                         slideFeaturePrev();
                         resetFeatureAuto();
                     });
