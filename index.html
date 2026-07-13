@@ -255,6 +255,9 @@
         </div>
     </section>
 
+    <!-- ============================================================ -->
+    <!-- OUR BELIEFS SECTION - FIXED CENTER ALIGNMENT -->
+    <!-- ============================================================ -->
     <section class="blog-section">
         <div class="blog-container">
             <div class="blog-container-top">
@@ -262,6 +265,7 @@
                 <h1>Where Every Project Tells a Story of <br> Excellence and Unwavering Trust</h1>
             </div>
             <div class="blog-container-content">
+                <!-- Row 1 -->
                 <div class="blog-container-content-box">
                     <div class="blog-container-content-box-img">
                         <img src="./blog-1.png" alt="">
@@ -288,6 +292,7 @@
                     <span>Transparency and honesty are at the <br> core of our business, fostering long <br> -term
                         relationships built on trust.</span>
                 </div>
+                <!-- Row 2 -->
                 <div class="blog-container-content-box-4">
                     <div class="blog-container-content-box-4-img">
                         <img src="./blog-4.png" alt="">
@@ -1143,8 +1148,12 @@
             }
             setInterval(nextHeroSlide, 3000);
 
+            // ============================================================
+            // COUNTER ANIMATION - SIMPLE VERSION (WORKING)
+            // ============================================================
             const counters = document.querySelectorAll(".counter");
             const observerOptions = { threshold: 0.5 };
+
             const counterObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting && !entry.target.dataset.counted) {
@@ -1164,6 +1173,7 @@
                     }
                 });
             }, observerOptions);
+
             counters.forEach(counter => counterObserver.observe(counter));
 
             // ============================================================
@@ -1515,30 +1525,6 @@
                 }
                 tickerAnimation();
             }
-
-            const allCounters = document.querySelectorAll(".counter:not([data-counted])");
-            const counterObs = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !entry.target.dataset.counted) {
-                        entry.target.dataset.counted = true;
-                        const target = +entry.target.getAttribute("data-target");
-                        let count = 0;
-                        const increment = Math.ceil(target / 100);
-                        const update = () => {
-                            count += increment;
-                            if (count >= target) {
-                                entry.target.innerText = target;
-                            } else {
-                                entry.target.innerText = count;
-                                requestAnimationFrame(update);
-                            }
-                        };
-                        update();
-                        counterObs.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-            allCounters.forEach(counter => counterObs.observe(counter));
 
         });
     </script>
